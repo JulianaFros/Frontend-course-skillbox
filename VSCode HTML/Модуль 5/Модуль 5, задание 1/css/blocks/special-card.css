@@ -1,0 +1,79 @@
+.special-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
+  padding: 30px;
+  border-radius: 16px;
+  background: #F4F6FA;
+  justify-content: space-between;
+}
+
+.special-card--blue {
+  background-color: #5E81FF;
+}
+
+.special-card__description {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.special-card__heading {
+  margin: 0;
+  color: #1E222E;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.special-card--blue .special-card__heading {
+  color: #FFFFFF;
+}
+
+.special-card__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.special-card--blue .special-card__text {
+  color: #FFFFFF;
+}
+
+.special-card__content {
+  display: flex;
+  gap: 110px;
+  align-items: end;
+}
+
+.special-card--blue .special-card__content {
+  gap: 90px;
+}
+
+.special-card--size--xl .special-card__content {
+  gap: 430px;
+}
+
+.special-card__image {
+  margin: 0 0 -30px -30px;
+}
+
+.special-card__list {
+  padding: 0 0 0 18px;
+  margin: 0 0 74px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  list-style-type: disc;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.special-card__benefit {
+  margin: 0;
+  padding: 0;
+}

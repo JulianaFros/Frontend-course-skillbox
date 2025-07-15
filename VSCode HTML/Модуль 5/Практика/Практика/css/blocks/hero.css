@@ -1,0 +1,45 @@
+.hero {
+    background-color: rgba(222, 236, 221, 0.8);
+    min-height: calc(100vh - 183px);
+    padding: 105px 0;
+    display: flex;
+    margin: 0 0 60px;
+    align-items: center;
+}
+
+.hero__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 640px;
+    gap: 55px;
+    align-items: center;
+}
+
+.hero__text {
+    margin: 0 0 40px 0;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: -0.05em;
+    color: #475009;
+}
+
+.hero__slogan {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #475009;
+    margin: 0 0 50px 0;
+}
+
+.hero__gallery {
+    display: grid;
+    list-style: none;
+    grid-template-columns: 305px 300px;
+    gap: 50px 35px;
+    padding: 0;
+    margin: 0;
+}
+
+.hero__gallery-item--xl {
+    grid-row: span 2;
+}

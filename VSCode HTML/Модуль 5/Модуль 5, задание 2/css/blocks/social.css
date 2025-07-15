@@ -1,0 +1,16 @@
+.social {
+    padding: 0;
+    margin: 0 0 24px 0;
+    list-style-type: none;
+    display: flex;
+    gap: 8px;
+}
+
+.social__link {
+    display: flex;
+    padding: 13px;
+    background-color: #EDEEEF;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}

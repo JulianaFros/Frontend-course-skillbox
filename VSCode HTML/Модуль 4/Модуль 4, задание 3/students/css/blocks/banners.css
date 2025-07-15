@@ -1,0 +1,16 @@
+.banners {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 0;
+  margin: 0;
+}
+
+.banners__item {
+  width: calc(50% - 16px);
+}
+
+.banners--mod .banners__item {
+  width: calc(25% - 24px);
+}

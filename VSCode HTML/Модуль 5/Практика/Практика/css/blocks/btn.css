@@ -1,0 +1,22 @@
+.btn {
+    display: block;
+    text-align: center;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: #502198;
+    width: 280px;
+    border: 2px solid rgba(80, 33, 152, 1);
+    padding: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.btn--size--xl {
+    font-size: 24px;
+    line-height: 24px;
+    color: #ffffff;
+    padding: 30px;
+    background-color: #502198;
+    width: 420px;
+}

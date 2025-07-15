@@ -1,0 +1,165 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px;
+  border-radius: 12px;
+  height: 100%;
+  background-color: #E7EFFF;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.banner--mod {
+  justify-content: flex-start;
+  padding: 32px 20px 20px 20px;
+  align-items: center;
+}
+
+.banner--mod .banner__img {
+  margin-top: auto;
+  width: 210px;
+}
+
+.banner--blue {
+  background-color: #476BF0;
+}
+
+.banner--green {
+  background-color: #CFF6E7;
+}
+
+.banner--azure {
+  background-color: #C4E7FF;
+}
+
+.banner__wrapper {
+  display: flex;
+  gap: 25px;
+  flex-grow: 1;
+  align-items: start;
+}
+
+.banner--mod .banner__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner__label {
+  border: 1px solid rgba(30, 34, 46, 0.5);
+  border-radius: 4px;
+  color: rgba(30, 34, 46, 0.5);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  margin: 0 0 12px 0;
+  padding: 5px 9px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 66px;
+  display: block;
+}
+
+.banner--mod .banner__label {
+  text-align: center;
+  display: block;
+  margin: 0 0 8px;
+}
+
+.banner__label--blue {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #FFFFFF80;
+}
+
+.banner--modblue .banner__label {
+  color: #FFFFFF80;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.banner__title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+}
+
+.banner__title--blue {
+  color: #FFFFFF;
+}
+
+.banner--modblue .banner__title {
+  color: #FFFFFF;
+}
+
+.banner--mod .banner__title {
+  text-align: center;
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.banner__text {
+  font-size: 15px;
+  line-height: 22px;
+  margin: 0 0 auto 0;
+}
+
+.banner--mod .banner__text {
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.banner__text--blue {
+  color: #FFFFFF;
+  margin: 0 0 auto 0;
+}
+
+.banner--modblue .banner__text {
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
+.banner__link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #476BF0;
+  padding: 10px 30px 10px 30px;
+  border-radius: 8px;
+  text-align: center;
+  display: block;
+  align-items: center;
+  text-decoration-line: none;
+}
+
+.banner__link--blue {
+  color: #476BF0;
+  background-color: #ffffff;
+}
+
+.banner--modblue .banner__link {
+  color: #476BF0;
+  background-color: #ffffff;
+}
+
+.banner--modblue {
+  background-color: #476BF0;
+  padding: 32px 20px 20px 20px;
+}
+
+.banner--modgreen {
+  background-color: #CFF6E7;
+}
+
+.banner--modazure {
+  background-color: #C4E7FF;
+}
+
+.banner--mod .banner__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

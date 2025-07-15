@@ -1,0 +1,50 @@
+.about-app {
+  margin: 0 0 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+}
+
+.about-app__inner {
+  width: 620px;
+}
+
+.about-app__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #1E222E;
+  margin: 0 0 16px;
+  display: block;
+  text-align: left;
+}
+
+.about-app__text {
+  margin: 0 0 32px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #1E222E;
+}
+
+.about-app__links {
+  display: flex;
+  gap: 12px;
+}
+
+.about-app__link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #1E222E;
+  padding: 14px 45px;
+  border-radius: 8px;
+  background-color: #EDEEEF;
+  text-decoration-line: none;
+}
+
+.about-app__link--secondary {
+  color: #FFFFFF;
+  background-color: #1E222E;
+}

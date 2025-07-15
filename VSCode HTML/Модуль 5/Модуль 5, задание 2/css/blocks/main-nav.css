@@ -1,0 +1,15 @@
+.main-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.main-nav__link {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+}

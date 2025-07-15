@@ -1,0 +1,19 @@
+.main-nav__list {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(5, auto);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-nav__item-link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    display: flex;
+    gap: 10px;
+}
