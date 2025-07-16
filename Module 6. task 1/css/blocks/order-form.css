@@ -1,0 +1,26 @@
+.order-form {
+    border: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.order-form__title {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 120%;
+    padding: 0;
+    margin: 0 0 60px 0;
+}
+
+.order-form__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 560px);
+    grid-column: auto;
+    gap: 80px;
+}
+
+.order-form__right,
+.order-form__left {
+    display: flex;
+    flex-direction: column;
+}

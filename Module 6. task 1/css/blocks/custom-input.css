@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin: 0 0 60px 0;
 }
 
 .custom-input__field {
@@ -13,8 +14,30 @@
   font-size: 18px;
   line-height: 1.2;
   border-bottom: 1px solid #CACACA;
+  position: relative;
 }
 
 .custom-input__field::placeholder {
   color: #9B9B9B;
+}
+
+.custom-input__label {
+  color: #1919EF;
+  font-size: 12px;
+  line-height: 120%;
+  font-weight: 400;
+  position: absolute;
+  left: 0;
+  top: -18px;
+}
+
+.custom-input__icon {
+  color: #CACACA;
+  position: absolute;
+  right: 0;
+  bottom: 13px;
+}
+
+.custom-input--company {
+  margin: 0;
 }

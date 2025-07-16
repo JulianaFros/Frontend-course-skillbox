@@ -1,0 +1,21 @@
+.custom-textarea {
+    grid-column: 1 / 3;
+}
+
+.custom-textarea__field {
+    width: 100%;
+    min-height: 102px;
+    border: none;
+    border-bottom: 1px solid #CACACA;
+    position: relative;
+}
+
+.custom-textarea__field::placeholder {
+    color: #9B9B9B;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
