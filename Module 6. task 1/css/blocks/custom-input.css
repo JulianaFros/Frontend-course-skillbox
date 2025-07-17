@@ -41,3 +41,7 @@
 .custom-input--company {
   margin: 0;
 }
+
+.custom-input--link {
+  margin-bottom: 0;
+}
