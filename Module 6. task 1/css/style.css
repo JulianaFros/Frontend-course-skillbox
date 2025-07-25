@@ -11,5 +11,7 @@
 @import "blocks/request.css";
 @import "blocks/custom-input.css";
 @import "blocks/custom-textarea.css";
+@import "blocks/custom-checkbox.css";
+@import "blocks/custom-radio.css";
 @import "blocks/footer.css";
 @import "blocks/order-form.css";

@@ -24,3 +24,35 @@
     display: flex;
     flex-direction: column;
 }
+
+.order-form__position {
+    position: relative;
+    padding-left: 29px;
+}
+
+.order-form__icon--position {
+    color: #ACB5BD;
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+
+.order-form__title--radio {
+    margin-bottom: 28px;
+}
+
+.order-form__btn {
+    color: rgba(25, 25, 239, 0.4);
+    padding: 11px 36px;
+    background-color: #fff;
+    border: 1px solid rgba(25, 25, 239, 0.4);
+    border-radius: 60px;
+    width: 166px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 125%;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}

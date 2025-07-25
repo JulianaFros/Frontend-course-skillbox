@@ -45,3 +45,16 @@
 .custom-input--link {
   margin-bottom: 0;
 }
+
+.custom-input--man {
+  width: 560px;
+  margin-bottom: 0;
+}
+
+.custom-input--where {
+  margin: 0;
+}
+
+.custom-input--where .custom-input__field::placeholder {
+  color: #000000;
+}

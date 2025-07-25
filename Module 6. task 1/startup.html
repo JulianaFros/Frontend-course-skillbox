@@ -155,13 +155,16 @@
 
           <!-- Укажи направление работы твоего стартапа или проекта -->
           <fieldset class="order-form">
-            <svg class="order-form__icon" width="20" height="20">
-              <use xlink:href="images/sprite.svg#icon-info"></use>
-            </svg>
-            <legend class="order-form__title">Укажи направление работы твоего стартапа или проекта</legend>
+            <div class="order-form order-form__position">
+              <svg class="order-form__icon order-form__icon--position" width="20" height="20">
+                <use xlink:href="images/sprite.svg#icon-info"></use>
+              </svg>
+              <legend class="order-form__title order-form__title--position">Укажи направление работы твоего стартапа или
+                проекта</legend>
+            </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="services_for_branches"
-                name="services_for_branches">
+              <input class="custom-checkbox__field visually-hidden visually-hidden" type="checkbox"
+                id="services_for_branches" name="services_for_branches">
               <label for="services_for_branches" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">Сервисы для отделений</span>
                 <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
@@ -170,8 +173,8 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="electronic_document_management"
-                name="electronic_document_management">
+              <input class="custom-checkbox__field visually-hidden visually-hidden" type="checkbox"
+                id="electronic_document_management" name="electronic_document_management">
               <label for="electronic_document_management" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">Электронный документооборот</span>
                 <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
@@ -180,7 +183,8 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="speech_technology" name="speech_technology">
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="speech_technology"
+                name="speech_technology" checked>
               <label for="speech_technology" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">Речевые технологии</span>
                 <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
@@ -189,7 +193,7 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="channels_with_clients"
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="channels_with_clients"
                 name="channels_with_clients">
               <label for="channels_with_clients" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">Каналы взаимодействия с клиентами</span>
@@ -199,7 +203,7 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="identification_and_biometrics"
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="identification_and_biometrics"
                 name="identification_and_biometrics">
               <label for="identification_and_biometrics" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">Идентификация и биометрия</span>
@@ -209,7 +213,7 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="services_for_investments"
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="services_for_investments"
                 name="services_for_investments">
               <label for="services_for_investments" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">Сервисы для инвестиций и работы с инвест.портфелем</span>
@@ -219,7 +223,8 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="loyalty_enhancement" name="loyalty_enhancement">
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="loyalty_enhancement"
+                name="loyalty_enhancement">
               <label for="loyalty_enhancement" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">Сервисы повышения лояльности и оптимизации клиентского
                   пути</span>
@@ -229,7 +234,7 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="mortgage" name="mortgage">
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="mortgage" name="mortgage">
               <label for="mortgage" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">Ипотека</span>
                 <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
@@ -238,7 +243,7 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="anti-fraud_and_cybersecurity"
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="anti-fraud_and_cybersecurity"
                 name="anti-fraud_and_cybersecurity">
               <label for="anti-fraud_and_cybersecurity" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">Антифрод и кибербезопасность</span>
@@ -248,7 +253,7 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="scoring_and_underwriting"
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="scoring_and_underwriting"
                 name="scoring_and_underwriting">
               <label for="scoring_and_underwriting" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">Скоринг и андеррайтинг</span>
@@ -258,7 +263,7 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="hrtech" name="hrtech">
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="hrtech" name="hrtech">
               <label for="hrtech" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">HrTech</span>
                 <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
@@ -267,7 +272,7 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="edtech" name="edtech">
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="edtech" name="edtech">
               <label for="edtech" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">EdTech</span>
                 <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
@@ -276,7 +281,7 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="crediting" name="crediting">
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="crediting" name="crediting">
               <label for="crediting" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">Кредитование</span>
                 <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
@@ -285,7 +290,7 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="car_loans" name="car_loans">
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="car_loans" name="car_loans">
               <label for="car_loans" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">Автокредитование</span>
                 <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
@@ -294,7 +299,7 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="insurance" name="insurance">
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="insurance" name="insurance">
               <label for="insurance" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">Страхование</span>
                 <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
@@ -303,7 +308,7 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="enriching_customer_data"
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="enriching_customer_data"
                 name="enriching_customer_data">
               <label for="enriching_customer_data" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">Обогащение данных о клиентах</span>
@@ -313,7 +318,7 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="crm" name="crm">
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="crm" name="crm">
               <label for="crm" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">CRM</span>
                 <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
@@ -322,7 +327,7 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="services_for_businesses"
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="services_for_businesses"
                 name="services_for_businesses">
               <label for="services_for_businesses" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">Сервисы для малого и среднего бизнеса</span>
@@ -332,7 +337,7 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="pfm" name="pfm">
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="pfm" name="pfm">
               <label for="pfm" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">PFM</span>
                 <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
@@ -341,7 +346,8 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="legal_service" name="legal_service">
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="legal_service"
+                name="legal_service">
               <label for="legal_service" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">Юридический сервис</span>
                 <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
@@ -350,7 +356,7 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="neobanking" name="neobanking">
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="neobanking" name="neobanking">
               <label for="neobanking" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">Необанкинг</span>
                 <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
@@ -359,7 +365,8 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="digital_marketing" name="digital_marketing">
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="digital_marketing"
+                name="digital_marketing">
               <label for="digital_marketing" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">Digital Marketing</span>
                 <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
@@ -368,8 +375,8 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="customer_churn_management_services"
-                name="customer_churn_management_services">
+              <input class="custom-checkbox__field visually-hidden" type="checkbox"
+                id="customer_churn_management_services" name="customer_churn_management_services">
               <label for="customer_churn_management_services" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">Сервисы по работе с оттоком клиентов</span>
                 <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
@@ -378,7 +385,7 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="attracting_new_customers"
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="attracting_new_customers"
                 name="attracting_new_customers">
               <label for="attracting_new_customers" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">Привлечение новых клиентов</span>
@@ -388,7 +395,7 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="helpdesk" name="helpdesk">
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="helpdesk" name="helpdesk">
               <label for="helpdesk" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">Helpdesk</span>
                 <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
@@ -397,7 +404,8 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="corporate_training" name="corporate_training">
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="corporate_training"
+                name="corporate_training">
               <label for="corporate_training" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">Корпоративное обучение</span>
                 <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
@@ -406,7 +414,7 @@
               </label>
             </div>
             <div class="custom-checkbox">
-              <input class="custom-checkbox__field" type="checkbox" id="hiring" name="hiring">
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="hiring" name="hiring">
               <label for="hiring" class="custom-checkbox__label">
                 <span class="custom-checkbox__heading">Найм</span>
                 <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
@@ -418,25 +426,70 @@
 
           <!-- Работал(а) ли ты раньше с Газпромбанком? -->
           <fieldset class="order-form">
-            <legend class="order-form__title">Работал(а) ли ты раньше с Газпромбанком?</legend>
+            <legend class="order-form__title order-form__title--radio">Работал(а) ли ты раньше с Газпромбанком?</legend>
             <div class="custom-radio">
               <input class="custom-radio__field" id="work-gpb" type="radio" name="work-gpb" value="yes">
               <label class="custom-radio__label" for="work-gpb">
-                <span class="custom-radio__top">
-                  <span class="custom-radio__name">Да</span>
-                </span>
+                <span class="custom-radio__name">Да</span>
               </label>
             </div>
             <div class="custom-radio">
               <input class="custom-radio__field" id="work-gpb-no" type="radio" name="work-gpb" value="no">
               <label class="custom-radio__label" for="work-gpb-no">
-                <span class="custom-radio__top">
-                  <span class="custom-radio__name">Нет</span>
-                </span>
+                <span class="custom-radio__name">Нет</span>
+              </label>
+            </div>
+            <div class="custom-input custom-input--man">
+              <input class="custom-input__field" type="text" name="name-of-man" placeholder="ФИО сотрудника"
+                aria-label="ФИО сотрудника" required>
+            </div>
+          </fieldset>
+
+          <!-- Откуда узнал(а) о нас? -->
+          <fieldset class="order-form">
+            <legend class="order-form__title order-form__title--radio">Откуда узнал(а) о нас?</legend>
+            <div class="custom-radio">
+              <input class="custom-radio__field" id="where-info-event" type="radio" name="where-info" value="event">
+              <label class="custom-radio__label" for="where-info-event">
+                <span class="custom-radio__name">Мероприятие</span>
+              </label>
+            </div>
+            <div class="custom-radio">
+              <input class="custom-radio__field" id="where-info-customer" type="radio" name="where-info"
+                value="customer">
+              <label class="custom-radio__label" for="where-info-customer">
+                <span class="custom-radio__name">Сотрудник</span>
+              </label>
+            </div>
+            <div class="custom-input custom-input--where">
+              <input class="custom-input__field" type="text" name="name-of-man" placeholder="Иванов Иван"
+                aria-label="ФИ сотрудника" required>
+            </div>
+          </fieldset>
+
+          <fieldset class="order-form">
+            <div class="custom-textarea">
+              <textarea class="custom-textarea__field" name="message" aria-label="Сообщение" placeholder="Сообщение"
+                required></textarea>
+            </div>
+          </fieldset>
+
+
+          <fieldset class="order-form">
+            <div class="custom-checkbox">
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="agree" name="agree">
+              <label for="agree" class="custom-checkbox__label">
+                <span class="custom-checkbox__text-link">Даю согласие на <a class="custom-checkbox__label-link"
+                    href="#">обработку персональных данных</a></span>
+                <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-check"></use>
+                </svg>
               </label>
             </div>
           </fieldset>
 
+          <button class="order-form__btn" type="button">Отправить</button>
+          <button class="order-form__btn" type="button">Отправить</button>
         </div>
       </div>
     </section>
