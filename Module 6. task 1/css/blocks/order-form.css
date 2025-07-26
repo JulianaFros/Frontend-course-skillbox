@@ -37,7 +37,7 @@
     flex-direction: column;
 }
 
-.order-form__position {
+.order-form--position .order-form {
     position: relative;
     padding-left: 29px;
     margin-bottom: 28px;
@@ -89,4 +89,12 @@
 
 .order-form--message {
     margin-bottom: 60px;
+}
+
+.order-form__icon-arrow {
+    color: #1919EF;
+}
+
+.order-form--buttons {
+    margin-bottom: 30px;
 }

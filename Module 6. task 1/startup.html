@@ -155,7 +155,7 @@
 
           <!-- Укажи направление работы твоего стартапа или проекта -->
           <fieldset class="order-form order-form--position">
-            <div class="order-form order-form__position">
+            <div class="order-form">
               <svg class="order-form__icon order-form__icon--position" width="20" height="20">
                 <use xlink:href="images/sprite.svg#icon-info"></use>
               </svg>
@@ -488,12 +488,14 @@
             </div>
           </fieldset>
 
-          <button class="order-form__btn" type="button">Отправить</button>
+          <fieldset class="order-form order-form--buttons">
+          <button class="order-form__btn btn" type="button">Отправить</button>
           <button class="order-form__btn order-form__btn--arrow" type="button">
-            <svg class="custom-checkbox__icon-arrow" width="24" height="24" aria-hidden="true">
+            <svg class="order-form__icon-arrow" width="24" height="24" aria-hidden="true">
               <use xlink:href="images/sprite.svg#icon-arrow-up"></use>
             </svg>
           </button>
+        </fieldset>
         </div>
       </div>
     </section>
