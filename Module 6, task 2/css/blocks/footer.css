@@ -1,0 +1,36 @@
+.footer__wrapper {
+    display: flex;
+    gap: 201px;
+}
+
+.footer_contacts {
+    display: flex;
+    gap: 24px;
+}
+
+.footer__phone {
+    display: flex;
+    gap: 8px;
+    position: relative;
+    justify-content: center;
+}
+
+.footer__contact-icon {
+    color: #ADAFBA;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 28px;
+}
+
+.footer__contact-text {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.footer__copyright {
+    font-size: 12px;
+    line-height: 14px;
+    color: #ADAFBA;
+}
