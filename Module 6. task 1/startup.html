@@ -88,7 +88,7 @@
                   <input class="custom-input__field" type="text" name="name" placeholder="Имя*" aria-label="Имя"
                     required>
                 </div>
-                <div class="custom-input">
+                <div class="custom-input custom-input--last">
                   <input class="custom-input__field" type="text" name="second-name" placeholder="Отчество"
                     aria-label="Отчество">
                 </div>
@@ -110,7 +110,7 @@
                     <use xlink:href="images/sprite.svg#icon-date"></use>
                   </svg>
                 </div>
-                <div class="custom-input">
+                <div class="custom-input custom-input--last">
                   <input class="custom-input__field" type="tel" name="user-phone" id="user-phone"
                     placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" aria-label="Номер телефона" required>
                   <label class="custom-input__label" for="mail">Телефон*</label>
@@ -154,7 +154,7 @@
           </fieldset>
 
           <!-- Укажи направление работы твоего стартапа или проекта -->
-          <fieldset class="order-form">
+          <fieldset class="order-form order-form--position">
             <div class="order-form order-form__position">
               <svg class="order-form__icon order-form__icon--position" width="20" height="20">
                 <use xlink:href="images/sprite.svg#icon-info"></use>
@@ -425,7 +425,7 @@
           </fieldset>
 
           <!-- Работал(а) ли ты раньше с Газпромбанком? -->
-          <fieldset class="order-form">
+          <fieldset class="order-form order-form--radio">
             <legend class="order-form__title order-form__title--radio">Работал(а) ли ты раньше с Газпромбанком?</legend>
             <div class="custom-radio">
               <input class="custom-radio__field" id="work-gpb" type="radio" name="work-gpb" value="yes">
@@ -467,7 +467,7 @@
             </div>
           </fieldset>
 
-          <fieldset class="order-form">
+          <fieldset class="order-form order-form--message">
             <div class="custom-textarea">
               <textarea class="custom-textarea__field" name="message" aria-label="Сообщение" placeholder="Сообщение"
                 required></textarea>
@@ -475,7 +475,7 @@
           </fieldset>
 
 
-          <fieldset class="order-form">
+          <fieldset class="order-form order-form--agree">
             <div class="custom-checkbox">
               <input class="custom-checkbox__field visually-hidden" type="checkbox" id="agree" name="agree">
               <label for="agree" class="custom-checkbox__label">
@@ -489,7 +489,11 @@
           </fieldset>
 
           <button class="order-form__btn" type="button">Отправить</button>
-          <button class="order-form__btn" type="button">Отправить</button>
+          <button class="order-form__btn order-form__btn--arrow" type="button">
+            <svg class="custom-checkbox__icon-arrow" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-arrow-up"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </section>

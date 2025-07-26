@@ -1,7 +1,19 @@
 .order-form {
     border: none;
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
+}
+
+.order-form--position {
+    margin-bottom: 6px;
+}
+
+.order-form--radio {
+    margin-bottom: 42px;
+}
+
+.order-form--agree {
+    margin-bottom: 50px;
 }
 
 .order-form__title {
@@ -16,7 +28,7 @@
     display: grid;
     grid-template-columns: repeat(2, 560px);
     grid-column: auto;
-    gap: 80px;
+    gap: 60px 80px;
 }
 
 .order-form__right,
@@ -28,6 +40,11 @@
 .order-form__position {
     position: relative;
     padding-left: 29px;
+    margin-bottom: 28px;
+}
+
+.order-form__title--position {
+    margin: 0;
 }
 
 .order-form__icon--position {
@@ -55,4 +72,21 @@
     cursor: pointer;
     display: block;
     margin: 0 auto;
+}
+
+.order-form__btn--arrow {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #F6F6F6;
+    border: none;
+    padding: 18px;
+    margin: 0;
+    position: fixed;
+    right: 120px;
+    bottom: 420px;
+}
+
+.order-form--message {
+    margin-bottom: 60px;
 }

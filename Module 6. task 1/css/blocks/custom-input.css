@@ -58,3 +58,7 @@
 .custom-input--where .custom-input__field::placeholder {
   color: #000000;
 }
+
+.custom-input--last {
+  margin: 0;
+}
