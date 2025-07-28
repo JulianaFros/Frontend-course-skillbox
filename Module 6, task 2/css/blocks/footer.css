@@ -1,18 +1,30 @@
+.footer {
+    padding-bottom: 28px;
+}
+
 .footer__wrapper {
     display: flex;
-    gap: 201px;
+    gap: 180px;
 }
 
 .footer_contacts {
     display: flex;
     gap: 24px;
+    align-items: center;
 }
 
 .footer__phone {
     display: flex;
     gap: 8px;
     position: relative;
-    justify-content: center;
+    padding-left: 28px;
+}
+
+.footer__telegram {
+    display: flex;
+    gap: 8px;
+    position: relative;
+    padding-left: 28px;
 }
 
 .footer__contact-icon {
@@ -20,7 +32,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    padding-left: 28px;
+    left: 0;
 }
 
 .footer__contact-text {
@@ -33,4 +45,32 @@
     font-size: 12px;
     line-height: 14px;
     color: #ADAFBA;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.footer__theme {
+    position: relative;
+}
+
+.footer__theme-text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #767A85;
+    padding-right: 28px;
+    margin: 0;
+}
+
+.footer__theme-icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #767A85;
 }

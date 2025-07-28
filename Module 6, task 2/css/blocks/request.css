@@ -1,0 +1,18 @@
+.request__wrapper {
+    width: 450px;
+    height: 424px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 104px;
+}
+
+.request__register {
+    color: #476BF0;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}

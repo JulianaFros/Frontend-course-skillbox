@@ -4,8 +4,14 @@
 @import "global/reboot.css";
 @import "global/container.css";
 @import "global/visually-hidden.css";
-@import "blocks/header.css";
-@import "blocks/footer.css";
+
 
 /* Blocks */
 /* ------------------------------------ */
+
+@import "blocks/header.css";
+@import "blocks/footer.css";
+@import "blocks/request.css";
+@import "blocks/order-form.css";
+@import "blocks/custom-input.css";
+@import "blocks/btn.css";

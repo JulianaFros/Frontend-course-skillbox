@@ -1,0 +1,44 @@
+.custom-input {
+    width: 386px;
+    position: relative;
+}
+
+.custom-input__login {
+    border-radius: 8px;
+    border: 1px solid #CDCFDE;
+    width: 386px;
+    height: 44px;
+    padding: 0 44px 0 20px;
+}
+
+.custom-input__text {
+    font-size: 14px;
+    line-height: 16px;
+    color: #8F939F;
+    margin: 0;
+    position: absolute;
+    top: -8px;
+    left: 16px;
+    background-color: #fff;
+    padding: 0 4px;
+}
+
+.custom-input__icon {
+    color: #8F939F;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.custom-input__button {
+    margin-bottom: 24px;
+}
+
+.custom-input_forgot {
+    color: #1E222E;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
