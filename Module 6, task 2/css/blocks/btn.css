@@ -8,3 +8,9 @@
     border-radius: 60px;
     cursor: pointer;
 }
+
+.btn--continue {
+    padding: 14px 143px;
+    background-color: #DBDFEB;
+    color: #777C9B;
+}

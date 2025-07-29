@@ -1,5 +1,6 @@
 .footer {
     padding-bottom: 28px;
+    margin-top: auto;
 }
 
 .footer__wrapper {
@@ -7,7 +8,7 @@
     gap: 180px;
 }
 
-.footer_contacts {
+.footer__contacts {
     display: flex;
     gap: 24px;
     align-items: center;

@@ -1,14 +1,98 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Проблема с входом - Газпромбанк Бизнес-Онлайн</title>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Проблема с входом - Газпромбанк Бизнес-Онлайн</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="header__logo-link" href="#" aria-label="Вернуться на главную страницу">
+          <svg class="header__logo-image" width="203" height="50" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#main-logo"></use>
+          </svg>
+        </a>
+        <div class="header__right-side">
+          <p class="header__right-text">Топ-3 лучших банков для корпоративных клиентов</p>
+          <p class="header__right-description">По&nbsp;версии Markswebb</p>
+          <svg class="header__right-icon" width="56" height="56" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-header-right"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="request">
+      <h1 class="visually-hidden">Проблемы со входом в Газпромбанк Бизнес-Онлайн</h1>
+      <div class="container">
+        <div class="request__wrapper request__wrapper--forgot">
+          <fieldset class="order-form order-form--forgot">
+            <legend class="order-form__title order-form__title--forgot">Не можете войти?</legend>
+            <div class="order-form__radio">
+              <div class="custom-radio">
+                <input class="custom-radio__field" type="radio" id="new-password" name="can-not-login"
+                  value="new-password">
+                <label class="custom-radio__label" for="new-password">
+                  <span class="custom-radio__name">Установить новый пароль</span>
+                </label>
+              </div>
+              <div class="custom-radio">
+                <input class="custom-radio__field" type="radio" id="last-login" name="can-not-login" value="last-login">
+                <label class="custom-radio__label" for="last-login">
+                  <span class="custom-radio__name">Восстановить логин</span>
+                </label>
+              </div>
+            </div>
+            <button class="order-form__button btn btn--continue">Продолжить</button>
+            <a class="order-form__back" href="#" aria-label="Назад">
+              <svg class="order-form__back-icon" width="20" height="20">
+                <use xlink:href="images/sprite.svg#icon-arrow-back"></use>
+              </svg>
+            </a>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__contacts">
+          <a class="footer__phone" href="tel:+78001001189">
+            <svg class="footer__contact-icon" width="20" height="20" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-phone"></use>
+            </svg>
+            <span class="footer__contact-text">8 800 100 11 89</span>
+          </a>
+          <a class="footer__telegram" href="#">
+            <svg class="footer__contact-icon" width="20" height="20" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-tg"></use>
+            </svg>
+            <span class="footer__contact-text">Написать в&nbsp;Telegram</span>
+          </a>
+          <p class="footer__copyright">&copy;&nbsp;2024 Банк ГПБ (АО) Генеральная лицензия Банка России &#8470;&nbsp;354
+          </p>
+          <p class="footer__copyright">Политика обработки персональных данных</p>
+        </div>
+        <div class="footer__right">
+          <a href="" class="footer__theme">
+            <p class="footer__theme-text">Светлая тема</p>
+            <svg class="footer__theme-icon" width="20" height="20" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-theme"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

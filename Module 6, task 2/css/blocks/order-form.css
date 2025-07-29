@@ -7,6 +7,10 @@
     margin-bottom: 32px;
 }
 
+.order-form--forgot {
+    margin: 0;
+}
+
 .order-form__title {
     color: #1E222E;
     font-size: 24px;
@@ -16,6 +20,10 @@
     margin-bottom: 28px;
     padding: 0;
     text-align: center;
+}
+
+.order-form--forgot .order-form__title {
+    margin-bottom: 32px;
 }
 
 .order-form__input {
@@ -68,4 +76,34 @@
     font-size: 14px;
     line-height: 16px;
     color: #7E7D87;
+}
+
+.order-form__radio {
+    border: 1px solid #CDCFDE80;
+    padding: 28px 32px;
+    border-radius: 12px;
+    margin-bottom: 28px;
+    width: 386px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+}
+
+.order-form__back {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 2px 2px 20px 0px #101A3B1A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 22px;
+    left: -24px;
+}
+
+.order-form__back-icon {
+    color: #1E222E;
 }
