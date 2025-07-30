@@ -10,18 +10,19 @@
     margin-bottom: 104px;
 }
 
-.request__wrapper--forgot {
+.request--forgot .request__wrapper {
     height: 316px;
     padding: 32px;
     position: relative;
     margin-top: 80px;
 }
 
-.request__wrapper--register {
+.request--register .request__wrapper {
     width: 450px;
-    height: 764px;
+    height: 712px;
     display: flex;
-    gap: 80px;
+    padding: 32px;
+    align-items: start;
 }
 
 .request__register {
@@ -32,7 +33,5 @@
 }
 
 .request__order-form {
-    display: grid;
-    gap: 12px 10px;
-    grid-template-columns: repeat(2, 188px);
+    width: 386px;
 }

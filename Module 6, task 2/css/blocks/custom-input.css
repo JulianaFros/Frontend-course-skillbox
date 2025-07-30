@@ -1,5 +1,29 @@
 .custom-input {
+    display: grid;
+    grid-template-columns: repeat(2, 188px);
+    gap: 20px 10px;
+}
+
+.custom-input__item {
     width: 386px;
+    position: relative;
+    grid-column: span 2;
+}
+
+.custom-input__item--name {
+    grid-column: 1/2;
+
+}
+
+.custom-input__item--surname {
+    grid-column: 2/3;
+}
+
+.custom-input__item--captcha {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: repeat(2, 188px);
+    gap: 0 10px;
     position: relative;
 }
 
@@ -9,6 +33,25 @@
     width: 386px;
     height: 44px;
     padding: 0 44px 0 20px;
+}
+
+.custom-input__login::placeholder {
+    font-size: 14px;
+    line-height: 16px;
+    color: #8F939F;
+}
+
+.custom-input__item--name .custom-input__login {
+    width: 188px;
+}
+
+.custom-input__item--surname .custom-input__login {
+    width: 188px;
+}
+
+.custom-input__item--captcha .custom-input__login {
+    width: 188px;
+    grid-column: 1/2;
 }
 
 .custom-input__text {
@@ -41,4 +84,30 @@
     line-height: 20px;
     font-weight: 400;
     margin-bottom: 32px;
+}
+
+.custom-input__captcha-title {
+    font-size: 16px;
+    line-height: 20px;
+    color: #8F939F;
+    font-weight: 400;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.custom-input__captcha-img {
+    height: 44px;
+    padding: 0 32px;
+    border-radius: 8px;
+    border: 1px solid #CDCFDE;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.custom-input__captcha-icon {
+    color: #8F939F;
+    position: absolute;
+    top: 4px;
+    right: 0;
+    cursor: pointer;
 }
