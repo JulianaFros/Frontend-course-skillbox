@@ -5,6 +5,7 @@
 .custom-radio__label {
     padding-left: 24px;
     margin: 0;  
+    cursor: pointer;
 }
 
 .custom-radio__field {
@@ -18,7 +19,7 @@
     margin: 0;
 }
 
-.custom-radio__field::before {
+.custom-radio__label::before {
     content: "";
     border: 1px solid #CDCFDE;
     border-radius: 50%;
@@ -28,4 +29,28 @@
     top: 50%;
     transform: translateY(-50%);
     left: 0;
+    cursor: pointer;
+}
+
+.custom-radio__label::after {
+    content: "";
+    border-radius: 50%;
+    background-color: #fff;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.custom-radio__field:checked + .custom-radio__label::before {
+    background-color: #476BF0;
+    border: none;
+    display: block;
+}
+
+.custom-radio__field:checked + .custom-radio__label::after {
+    display: block;
 }

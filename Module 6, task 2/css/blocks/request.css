@@ -7,7 +7,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 104px;
+    margin-bottom: 32px;
+}
+
+.request--login {
+    padding-top: 63px;
+}
+
+.request--forgot {
+    padding-top: 64px;
 }
 
 .request--forgot .request__wrapper {
@@ -21,8 +29,9 @@
     width: 450px;
     height: 712px;
     display: flex;
-    padding: 32px;
+    padding: 34px 32px 32px;
     align-items: start;
+    margin-bottom: 35px;
 }
 
 .request__register {
@@ -32,6 +41,22 @@
     font-weight: 400;
 }
 
+.request__register:hover {
+    color: #3356D7;
+}
+
 .request__order-form {
     width: 386px;
+}
+
+.request__link {
+    margin: auto;
+    margin-bottom: 39px;
+    display: block;
+    text-align: center;
+    padding: 0 116px;
+    color: #476BF0;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
 }

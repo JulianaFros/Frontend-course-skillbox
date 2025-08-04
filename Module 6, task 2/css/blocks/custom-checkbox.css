@@ -31,8 +31,8 @@
     color: #FFFFFF;
     display: none;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 4px;
+    top: 4px;
 }
 
 .custom-checkbox__field:checked+.custom-checkbox__label::before {
@@ -40,6 +40,6 @@
     background-color: #476BF0;
 }
 
-.custom-checkbox__field:checked+.custom-checkbox__label .custom-checkbox__icon {
+.custom-checkbox__field:checked+ .custom-checkbox__label .custom-checkbox__icon {
     display: block;
 }

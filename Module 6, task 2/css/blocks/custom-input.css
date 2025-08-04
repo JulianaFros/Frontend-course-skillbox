@@ -35,10 +35,41 @@
     padding: 0 44px 0 20px;
 }
 
+.custom-input__item:hover .custom-input__login {
+    border: 1px solid #3356D7;
+}
+
+.custom-input__item:hover .custom-input__icon {
+    color: #3356D7;
+}
+
+.custom-input__item:focus .custom-input__login {
+    border: 1px solid #3356D7;
+    outline: none;
+}
+
+.custom-input__item:focus .custom-input__icon {
+    color: #3356D7;
+}
+
+.custom-input__item:invalid .custom-input__login {
+    border: 1px solid #F9C4C2;
+    outline: none;
+    background-color: #FFFBFB;
+}
+
+.custom-input__item:invalid .custom-input__icon {
+    color: #F9C4C2;
+}
+
 .custom-input__login::placeholder {
     font-size: 14px;
     line-height: 16px;
     color: #8F939F;
+}
+
+.custom-input--register .custom-input__login {
+    padding-left: 15px;
 }
 
 .custom-input__item--name .custom-input__login {
@@ -66,6 +97,10 @@
     padding: 0 4px;
 }
 
+.custom-input--register .custom-input__text {
+    left: 13px;
+}
+
 .custom-input__icon {
     color: #8F939F;
     position: absolute;
@@ -84,6 +119,10 @@
     line-height: 20px;
     font-weight: 400;
     margin-bottom: 32px;
+}
+
+.custom-input_forgot:hover {
+    color: #3356D7;
 }
 
 .custom-input__captcha-title {

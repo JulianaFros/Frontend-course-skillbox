@@ -6,6 +6,8 @@
 .footer__wrapper {
     display: flex;
     gap: 180px;
+    width: 1384px;
+    justify-content: space-between;
 }
 
 .footer__contacts {
@@ -21,11 +23,27 @@
     padding-left: 28px;
 }
 
+.footer__phone:hover {
+    color: #3356D7;
+}
+
+.footer__phone:hover .footer__contact-icon {
+    color: #3356D7;
+}
+
 .footer__telegram {
     display: flex;
     gap: 8px;
     position: relative;
     padding-left: 28px;
+}
+
+.footer__telegram:hover {
+    color: #3356D7;
+}
+
+.footer__telegram:hover .footer__contact-icon {
+    color: #3356D7;
 }
 
 .footer__contact-icon {

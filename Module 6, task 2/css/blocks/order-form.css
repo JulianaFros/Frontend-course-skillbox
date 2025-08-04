@@ -25,7 +25,7 @@
     line-height: 28px;
     font-weight: 400;
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
     padding: 0;
     text-align: center;
 }
@@ -42,7 +42,7 @@
 }
 
 .order-form--register .order-form__input {
-    gap: 24px;
+    gap: 23px;
     margin: 0;
 }
 
@@ -119,4 +119,17 @@
 
 .order-form__back-icon {
     color: #1E222E;
+}
+
+.order-form__back:hover .order-form__back-icon {
+    color: #476BF0;
+}
+
+.order-form__back:focus .order-form__back-icon {
+    color: #476BF0;
+}
+
+.order-form__back:disabled .order-form__back-icon {
+    color: #777C9B;
+    background-color: #DBDFEB;
 }
