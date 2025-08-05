@@ -94,3 +94,8 @@
     transform: translateY(-50%);
     color: #767A85;
 }
+
+.footer__contact-icon, 
+.footer__theme-icon {
+    pointer-events: none;
+}

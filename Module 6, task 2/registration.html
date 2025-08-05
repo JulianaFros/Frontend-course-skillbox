@@ -81,7 +81,7 @@
                       </div>
                       <div class="custom-input__item custom-input__item--captcha">
                         <span class="custom-input__captcha-title">Код с картинки</span>
-                        <input class="custom-input__login" type="text" name="text" aria-label="Капча">
+                        <input class="custom-input__login" type="text" name="text" id="text" aria-label="Капча">
                         <p class="custom-input__error">Поле обязательно для заполнения</p>
                         <img class="custom-input__captcha-img" src="images/captcha.png" alt="Пример каптчи">
                         <svg class="custom-input__captcha-icon" width="12" height="14">
@@ -89,7 +89,7 @@
                         </svg>
                       </div>
                     </div>
-                    <button class="order-form__button btn btn--register">Продолжить</button>
+                    <button class="order-form__button btn btn--register" type="submit">Продолжить</button>
                     <fieldset class="order-form order-form--agree">
                       <div class="custom-checkbox">
                         <input class="custom-checkbox__field visually-hidden" type="checkbox" id="agree" name="agree">
@@ -108,7 +108,7 @@
             </div>
           </div>
           <div class="request__register-link">
-          <a class="request__register-link-text" href="login.html">Войти в ГПБ Бизнес-онлайн</a>
+          <a class="request__register-link-text" href="login.html">Войти в&nbsp;ГПБ Бизнес-онлайн</a>
         </div>
         </section>
         <section class="description">
@@ -153,7 +153,7 @@
           <p class="footer__copyright">Политика обработки персональных данных</p>
         </div>
         <div class="footer__right">
-          <a href="" class="footer__theme">
+          <a class="footer__theme" href="#">
             <p class="footer__theme-text">Светлая тема</p>
             <svg class="footer__theme-icon" width="20" height="20" aria-hidden="true">
               <use xlink:href="images/sprite.svg#icon-theme"></use>

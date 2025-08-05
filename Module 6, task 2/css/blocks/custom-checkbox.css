@@ -33,6 +33,7 @@
     position: absolute;
     left: 4px;
     top: 4px;
+    pointer-events: none;
 }
 
 .custom-checkbox__field:checked+.custom-checkbox__label::before {

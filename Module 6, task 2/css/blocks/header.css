@@ -37,3 +37,8 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
+.header__logo-image,
+.header__right-icon {
+    pointer-events: none;
+}

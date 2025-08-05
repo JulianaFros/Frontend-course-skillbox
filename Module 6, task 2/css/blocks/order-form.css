@@ -96,6 +96,7 @@
     border-radius: 50%;
     height: 32px;
     width: 32px;
+    pointer-events: none;
 }
 
 .order-form__link-text {
@@ -132,6 +133,7 @@
 
 .order-form__back-icon {
     color: #1E222E;
+    pointer-events: none;
 }
 
 .order-form__back:hover .order-form__back-icon {
@@ -158,3 +160,4 @@
     font-weight: 400;
     margin-bottom: 32px;
 }
+
