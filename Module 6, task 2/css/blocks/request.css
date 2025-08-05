@@ -8,6 +8,7 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 32px;
+    position: relative;
 }
 
 .request--login {
@@ -34,7 +35,16 @@
     margin-bottom: 35px;
 }
 
-.request__register {
+.request__register-link {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.request--register .request__register-link {
+    margin: 0;
+}
+
+.request__register-link-text {
     color: #476BF0;
     font-size: 16px;
     line-height: 20px;

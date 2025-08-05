@@ -43,38 +43,46 @@
                     <div class="custom-input custom-input--register">
                       <div class="custom-input__item">
                         <input class="custom-input__login" type="text" name="surname" id="surname" aria-label="Фамилия">
+                        <p class="custom-input__error">Поле обязательно для заполнения</p>
                         <label class="custom-input__text" for="surname">Фамилия</label>
                       </div>
                       <div class="custom-input__item custom-input__item--name">
                         <input class="custom-input__login" type="text" name="name" id="name" aria-label="Имя">
+                        <p class="custom-input__error">Поле обязательно для заполнения</p>
                         <label class="custom-input__text" for="name">Имя</label>
                       </div>
                       <div class="custom-input__item custom-input__item--surname">
                         <input class="custom-input__login" type="text" name="lastname" id="lastname"
                           aria-label="Отчество">
-                        <label class="custom-input__text" for="lastname">Отчество</label>
+                        <p class="custom-input__error">Поле обязательно для заполнения</p>
+                          <label class="custom-input__text" for="lastname">Отчество</label>
                       </div>
                       <div class="custom-input__item">
                         <input class="custom-input__login" type="text" name="login" id="login" aria-label="Логин">
+                        <p class="custom-input__error">Поле обязательно для заполнения</p>
                         <label class="custom-input__text" for="login">Логин</label>
                       </div>
                       <div class="custom-input__item">
                         <input class="custom-input__login" type="password" name="password" id="password"
                           aria-label="Пароль">
-                        <label class="custom-input__text" for="password">Пароль</label>
+                        <p class="custom-input__error">Поле обязательно для заполнения</p>
+                          <label class="custom-input__text" for="password">Пароль</label>
                       </div>
                       <div class="custom-input__item">
                         <input class="custom-input__login" type="tel" name="tel" id="tel" aria-label="Телефон"
                           placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ">
-                        <label class="custom-input__text" for="tel">Телефон</label>
+                        <p class="custom-input__error">Поле обязательно для заполнения</p>
+                          <label class="custom-input__text" for="tel">Телефон</label>
                       </div>
                       <div class="custom-input__item">
                         <input class="custom-input__login" type="email" name="email" id="email" aria-label="E-mail">
+                        <p class="custom-input__error">Поле обязательно для заполнения</p>
                         <label class="custom-input__text" for="email">Email</label>
                       </div>
                       <div class="custom-input__item custom-input__item--captcha">
                         <span class="custom-input__captcha-title">Код с картинки</span>
                         <input class="custom-input__login" type="text" name="text" aria-label="Капча">
+                        <p class="custom-input__error">Поле обязательно для заполнения</p>
                         <img class="custom-input__captcha-img" src="images/captcha.png" alt="Пример каптчи">
                         <svg class="custom-input__captcha-icon" width="12" height="14">
                           <use xlink:href="images/sprite.svg#icon-refresh"></use>
@@ -99,7 +107,9 @@
               </form>
             </div>
           </div>
-          <a class="request__link" href="login.html">Войти в ГПБ Бизнес-онлайн</a>
+          <div class="request__register-link">
+          <a class="request__register-link-text" href="login.html">Войти в ГПБ Бизнес-онлайн</a>
+        </div>
         </section>
         <section class="description">
           <div class="description__wrapper">

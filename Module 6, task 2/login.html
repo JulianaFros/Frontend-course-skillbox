@@ -35,20 +35,21 @@
       <div class="container">
         <div class="request__wrapper">
           <form action="#">
-            <fieldset class="order-form">
+            <fieldset class="order-form order-form--login">
+              <legend class="order-form__title">Вход в ГПБ Бизнес-онлайн</legend>
               <div class="order-form__up">
-                <legend class="order-form__title">Вход в ГПБ Бизнес-онлайн</legend>
                 <div class="custom-input custom-input--list">
                   <div class="custom-input__item">
                     <input class="custom-input__login" type="text" name="login" id="login" aria-label="Логин">
+                    <p class="custom-input__error">Неверный логин</p>
                     <label class="custom-input__text" for="login">Логин</label>
                     <svg class="custom-input__icon" width="24" height="24" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-account"></use>
                     </svg>
                   </div>
                   <div class="custom-input__item">
-                    <input class="custom-input__login" type="password" name="password" id="password"
-                      aria-label="Пароль">
+                    <input class="custom-input__login" type="password" name="password" id="password" aria-label="Пароль">
+                    <p class="custom-input__error">Неверный пароль</p>
                     <label class="custom-input__text" for="password">Пароль</label>
                     <svg class="custom-input__icon" width="24" height="24">
                       <use xlink:href="images/sprite.svg#icon-account-eye"></use>
@@ -69,7 +70,9 @@
                 </a>
               </div>
             </fieldset>
-            <a class="request__register" href="registration.html">Зарегистрироваться</a>
+            <div class="request__register-link">
+              <a class="request__register-link-text" href="registration.html">Зарегистрироваться</a>
+            </div>
           </form>
         </div>
       </div>

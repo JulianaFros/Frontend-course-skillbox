@@ -54,3 +54,7 @@
 .custom-radio__field:checked + .custom-radio__label::after {
     display: block;
 }
+
+.custom-radio__field:invalid + .custom-radio__label::before {
+    border: 1px solid #F6514B;
+}
