@@ -4,6 +4,13 @@
     gap: 20px 10px;
 }
 
+.custom-input--list {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    margin-bottom: 24px;
+}
+
 .custom-input__item {
     width: 386px;
     position: relative;
@@ -43,22 +50,22 @@
     color: #3356D7;
 }
 
-.custom-input__item:focus .custom-input__login {
+.custom-input__item:focus-within .custom-input__login {
     border: 1px solid #3356D7;
     outline: none;
 }
 
-.custom-input__item:focus .custom-input__icon {
+.custom-input__item:focus-within .custom-input__icon {
     color: #3356D7;
 }
 
-.custom-input__item:invalid .custom-input__login {
+.custom-input__item:invalid {
     border: 1px solid #F9C4C2;
     outline: none;
     background-color: #FFFBFB;
 }
 
-.custom-input__item:invalid .custom-input__icon {
+.custom-input__item:invalid ~ .custom-input__icon {
     color: #F9C4C2;
 }
 
@@ -107,18 +114,6 @@
     right: 16px;
     top: 50%;
     transform: translateY(-50%);
-}
-
-.custom-input__button {
-    margin-bottom: 24px;
-}
-
-.custom-input_forgot {
-    color: #1E222E;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    margin-bottom: 32px;
 }
 
 .custom-input_forgot:hover {

@@ -34,30 +34,33 @@
       <h1 class="visually-hidden">Проблемы со входом в Газпромбанк Бизнес-Онлайн</h1>
       <div class="container">
         <div class="request__wrapper">
-          <fieldset class="order-form order-form--forgot">
-            <legend class="order-form__title order-form__title--forgot">Не можете войти?</legend>
-            <div class="order-form__radio">
-              <div class="custom-radio">
-                <input class="custom-radio__field" type="radio" id="new-password" name="can-not-login"
-                  value="new-password">
-                <label class="custom-radio__label" for="new-password">
-                  <span class="custom-radio__name">Установить новый пароль</span>
-                </label>
+          <form action="#">
+            <fieldset class="order-form order-form--forgot">
+              <legend class="order-form__title order-form__title--forgot">Не можете войти?</legend>
+              <div class="order-form__radio">
+                <div class="custom-radio">
+                  <input class="custom-radio__field" type="radio" id="new-password" name="can-not-login"
+                    value="new-password">
+                  <label class="custom-radio__label" for="new-password">
+                    <span class="custom-radio__name">Установить новый пароль</span>
+                  </label>
+                </div>
+                <div class="custom-radio">
+                  <input class="custom-radio__field" type="radio" id="last-login" name="can-not-login"
+                    value="last-login">
+                  <label class="custom-radio__label" for="last-login">
+                    <span class="custom-radio__name">Восстановить логин</span>
+                  </label>
+                </div>
               </div>
-              <div class="custom-radio">
-                <input class="custom-radio__field" type="radio" id="last-login" name="can-not-login" value="last-login">
-                <label class="custom-radio__label" for="last-login">
-                  <span class="custom-radio__name">Восстановить логин</span>
-                </label>
-              </div>
-            </div>
-            <button class="order-form__button btn btn--continue" disabled>Продолжить</button>
-            <a class="order-form__back" href="login.html" aria-label="Назад">
-              <svg class="order-form__back-icon" width="20" height="20">
-                <use xlink:href="images/sprite.svg#icon-arrow-back"></use>
-              </svg>
-            </a>
-          </fieldset>
+              <button class="order-form__button btn btn--continue" type="submit" disabled>Продолжить</button>
+              <a class="order-form__back" href="login.html" aria-label="Назад">
+                <svg class="order-form__back-icon" width="20" height="20">
+                  <use xlink:href="images/sprite.svg#icon-arrow-back"></use>
+                </svg>
+              </a>
+            </fieldset>
+          </form>
         </div>
       </div>
     </section>

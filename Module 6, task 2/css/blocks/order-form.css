@@ -133,3 +133,15 @@
     color: #777C9B;
     background-color: #DBDFEB;
 }
+
+.order-form__button {
+    margin-bottom: 24px;
+}
+
+.order-form__forgot {
+    color: #1E222E;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
