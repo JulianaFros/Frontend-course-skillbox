@@ -3,12 +3,13 @@
     height: 424px;
     border-radius: 20px;
     background-color: #fff;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 32px;
     position: relative;
+    padding: 32px 32px 24px;
 }
 
 .request--login {

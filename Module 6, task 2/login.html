@@ -38,28 +38,27 @@
             <fieldset class="order-form order-form--login">
               <legend class="order-form__title">Вход в ГПБ Бизнес-онлайн</legend>
               <div class="order-form__up">
-                <div class="custom-input custom-input--list">
-                  <div class="custom-input__item">
-                    <input class="custom-input__login" type="text" name="login" id="login" aria-label="Логин">
-                    <p class="custom-input__error">Неверный логин</p>
-                    <label class="custom-input__text" for="login">Логин</label>
-                    <svg class="custom-input__icon" width="24" height="24" aria-hidden="true">
-                      <use xlink:href="images/sprite.svg#icon-account"></use>
-                    </svg>
-                  </div>
-                  <div class="custom-input__item">
-                    <input class="custom-input__login" type="password" name="password" id="password" aria-label="Пароль">
-                    <p class="custom-input__error">Неверный пароль</p>
-                    <label class="custom-input__text" for="password">Пароль</label>
-                    <svg class="custom-input__icon" width="24" height="24">
-                      <use xlink:href="images/sprite.svg#icon-account-eye"></use>
-                    </svg>
-                  </div>
+                <div class="custom-input">
+                  <input class="custom-input__login" type="text" name="login" id="login" aria-label="Логин">
+                  <span class="custom-input__error">Неверный логин</span>
+                  <label class="custom-input__text" for="login">Логин</label>
+                  <svg class="custom-input__icon" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-account"></use>
+                  </svg>
+                </div>
+                <div class="custom-input">
+                  <input class="custom-input__login" type="password" name="password" id="password" aria-label="Пароль">
+                  <span class="custom-input__error">Неверный пароль</span>
+                  <label class="custom-input__text" for="password">Пароль</label>
+                  <svg class="custom-input__icon" width="24" height="24">
+                    <use xlink:href="images/sprite.svg#icon-account-eye"></use>
+                  </svg>
                 </div>
                 <button class="order-form__button btn" type="submit">Войти</button>
-                <a class="order-form__forgot" href="forgot-data.html" aria-label="Забыли логин или пароль?">Забыли логин
-                  или пароль?</a>
+              <a class="order-form__forgot" href="forgot-data.html" aria-label="Забыли логин или пароль?">Забыли логин
+                или пароль?</a>
               </div>
+              
               <div class="order-form__down">
                 <span class="order-form__text">Войти с помощью:</span>
                 <a class="order-form__link" href="#" aria-hidden="true">

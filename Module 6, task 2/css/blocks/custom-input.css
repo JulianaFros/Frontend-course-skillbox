@@ -1,7 +1,8 @@
 .custom-input {
-    display: grid;
-    grid-template-columns: repeat(2, 188px);
-    gap: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
 }
 
 .custom-input--list {

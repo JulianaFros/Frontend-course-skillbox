@@ -2,11 +2,13 @@
     color: #FFFFFF;
     font-size: 16px;
     line-height: 20px;
-    padding: 14px 168px;
+    padding: 14px 0;
+    width: 100%;
     border: none;
     background-color: #476BF0;
     border-radius: 60px;
     cursor: pointer;
+    margin-top: 12px;
 }
 
 .btn:hover {
