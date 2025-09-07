@@ -46,16 +46,18 @@
                         <span class="custom-input__error">Поле обязательно для заполнения</span>
                         <label class="custom-input__label" for="surname">Фамилия</label>
                       </div>
-                      <div class="custom-input__item custom-input__item--name">
-                        <input class="custom-input__field" type="text" name="name" id="name" aria-label="Имя">
-                        <span class="custom-input__error">Поле обязательно для заполнения</span>
-                        <label class="custom-input__label" for="name">Имя</label>
-                      </div>
-                      <div class="custom-input__item custom-input__item--surname">
-                        <input class="custom-input__field" type="text" name="lastname" id="lastname"
-                          aria-label="Отчество">
-                        <span class="custom-input__error">Поле обязательно для заполнения</span>
-                        <label class="custom-input__label" for="lastname">Отчество</label>
+                      <div class="custom-input__row">
+                        <div class="custom-input__item custom-input__item--half">
+                          <input class="custom-input__field" type="text" id="first-name" name="firstName"
+                            autocomplete="given-name" aria-label="Имя">
+                          <label class="custom-input__label" for="first-name">Имя</label>
+                        </div>
+
+                        <div class="custom-input__item custom-input__item--half">
+                          <input class="custom-input__field" type="text" id="middle-name" name="middleName"
+                            autocomplete="additional-name" aria-label="Отчество">
+                          <label class="custom-input__label" for="middle-name">Отчество</label>
+                        </div>
                       </div>
                       <div class="custom-input__item">
                         <input class="custom-input__field" type="text" name="login" id="login" aria-label="Логин">
@@ -93,7 +95,7 @@
                           <input class="custom-input__field custom-input__captcha-field" id="captcha" name="captcha">
                           <img class="custom-input__captcha-img" src="images/captcha.png" alt="Картинка с кодом">
                         </div>
-                        <span id="captcha-error" class="custom-input__error" role="alert" hidden>Поле обязательно для
+                        <span class="custom-input__error" id="captcha-error" role="alert" hidden>Поле обязательно для
                           заполнения</span>
                       </div>
 
