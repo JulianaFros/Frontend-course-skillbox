@@ -1,0 +1,36 @@
+.radio-card {
+    position: relative;
+    border: 1px solid #E2E6F1;
+    border-radius: 16px;
+    padding: 16px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: #fff;
+    transition: border-color .15s, box-shadow .15s;
+    cursor: pointer;
+}
+
+.radio-card:hover {
+    border-color: #2B79E3;
+}
+
+.radio-card:has(.radio__input:focus-visible) {
+    box-shadow: 0 0 0 3px rgba(43, 121, 227, .25);
+}
+
+.radio-card:has(.radio__input:checked) {
+    border-color: #2B79E3;
+}
+
+.radio-card__label {
+    font-weight: 700;
+    color: #1E222E;
+}
+
+.radio-card__right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

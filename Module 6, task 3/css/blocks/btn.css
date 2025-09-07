@@ -1,0 +1,38 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 16px;
+    padding: 14px 18px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn--m {
+    min-width: 220px;
+}
+
+.btn--blue {
+    background: linear-gradient(90deg, #2AA8E0 0%, #2B79E3 100%);
+}
+
+.btn--indigo {
+    background: linear-gradient(90deg, #5A7CE8 0%, #8E3FE1 100%);
+}
+
+.btn--magenta {
+    background: linear-gradient(90deg, #8A41E2 0%, #F014B7 100%);
+}
+
+.btn--blue:hover,
+.btn--indigo:hover,
+.btn--magenta:hover {
+    filter: brightness(.97);
+}
+
+.btn:focus-visible {
+    outline: 3px solid rgba(43, 121, 227, .25);
+    outline-offset: 2px;
+}

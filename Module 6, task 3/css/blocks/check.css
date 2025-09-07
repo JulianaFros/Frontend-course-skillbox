@@ -1,0 +1,40 @@
+.check {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 2px solid #259DD6;
+    display: inline-grid;
+    background: #fff;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.check__inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: #fff;
+}
+
+.check__inner svg {
+    width: 12px;
+    height: 10px;
+    display: none;
+    color: #fff;
+}
+
+.option__input:checked+.option__box .check {
+    background: #259DD6;
+    border-color: #259DD6;
+}
+
+.option__input:checked+.option__box .check__inner {
+    color: #259DD6;
+}
+
+.option__input:checked+.option__box .check__inner svg {
+    display: block;
+}

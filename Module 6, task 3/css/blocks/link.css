@@ -1,0 +1,18 @@
+.link--more {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 115%;
+    color: #259DD6;
+}
+
+.link--more:hover {
+    text-decoration: underline;
+}
+
+.order-form__link-icon {
+    display: inline-block;
+}

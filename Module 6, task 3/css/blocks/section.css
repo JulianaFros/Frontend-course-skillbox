@@ -1,0 +1,17 @@
+.section{ padding: 28px 0; }
+
+.section__title{
+  margin: 0 0 20px;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.15;
+  letter-spacing: .2px;
+  color: #1E222E;
+}
+.section__hashtag{
+  color: #2B79E3;
+}
+
+.section--order .section__title{
+  margin-bottom: 16px;
+}

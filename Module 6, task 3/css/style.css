@@ -9,3 +9,18 @@
 /* ------------------------------------ */
 @import "blocks/header.css";
 @import "blocks/footer.css";
+@import "blocks/btn.css";
+@import "blocks/card.css";
+@import "blocks/check.css";
+@import "blocks/link.css";
+@import "blocks/option.css";
+@import "blocks/plan.css";
+@import "blocks/plans.css";
+@import "blocks/section.css";
+@import "blocks/stepper.css";
+@import "blocks/order.css";
+@import "blocks/radio.css";
+@import "blocks/radio-card.css";
+@import "blocks/field.css";
+@import "blocks/input.css";
+@import "blocks/checkbox.css";
