@@ -1,3 +1,10 @@
+.custom-checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 4px;
+}
+
 .custom-checkbox__text-link {
     color: #1E222E;
     font-size: 16px;

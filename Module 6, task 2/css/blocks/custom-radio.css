@@ -55,6 +55,7 @@
     display: block;
 }
 
-.custom-radio__field:invalid + .custom-radio__label::before {
-    border: 1px solid #F6514B;
+.custom-radio.is-error .custom-radio__label::before,
+.custom-checkbox.is-error .custom-checkbox__label::before {
+  border: 1px solid #F6514B;
 }

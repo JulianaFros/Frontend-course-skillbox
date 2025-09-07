@@ -10,6 +10,7 @@
     font-size: 16px;
     line-height: 20px;
     color: #1E222E;
+    counter-reset: features;
 }
 
 .description__item {
@@ -18,8 +19,8 @@
 }
 
 .description__item::before {
-  content: counter(example);
-  counter-increment: example;
+  content: counter(features);
+  counter-increment: features;
   position: absolute;
   left: 0;
   top: 0;
