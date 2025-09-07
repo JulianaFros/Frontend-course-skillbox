@@ -4,7 +4,7 @@
 
 .description__list {
     list-style-type: none;
-    margin-left: 60px;
+    margin: 0;
     padding: 0;
     font-weight: 400;
     font-size: 16px;
@@ -12,26 +12,22 @@
     color: #1E222E;
 }
 
-.description__list .description__item {
-    position: relative;
-    counter-increment: example 1;
+.description__item {
+  position: relative;
+  padding-left: 56px;
 }
 
-.description__list .description__item::before {
-    content: counter(example);
-    display: inline-block;
-    position: absolute;
-    padding-top: 7px;
-    top: 0;
-    left: -60px;
-    width: 40px;
-    height: 40px;
-    background: #fff;
-    color: #4F6AE8;
-    text-align: center;
-    line-height: 28px;
-    font-size: 18px;
-    border-radius: 50%;
+.description__item::before {
+  content: counter(example);
+  counter-increment: example;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px; height: 40px;
+  display: inline-grid; place-items:center;
+  border-radius: 999px;
+  background:#fff;
+  color:#4F6AE8;
 }
 
 
