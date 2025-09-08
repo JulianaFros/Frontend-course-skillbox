@@ -29,7 +29,6 @@
   </header>
   <main class="page page--tariffs">
 
-    <!-- ====== Секция: Тарифы ====== -->
     <section class="section section--plans">
       <div class="container">
         <h1 class="section__title">
@@ -39,7 +38,6 @@
         <div class="plans">
           <article class="plan card plan--try">
 
-            <!-- Заголовок и краткая инфа -->
             <header class="plan__head">
               <h2 class="plan__title">Пробуй</h2>
 
@@ -61,7 +59,6 @@
               </ul>
             </header>
 
-            <!-- Преимущества с иконками -->
             <ul class="plan__list">
               <li class="plan__feature">
                 <svg class="plan__feature__icon" width="40" height="40" aria-hidden="true">
@@ -97,45 +94,44 @@
               </a>
             </p>
 
-            <div class="plan-options">
-
-              <!-- /месяц -->
+            <fieldset class="plan-options">
               <div class="option">
                 <input class="option__radio" type="radio" name="plan-try" id="try-month" checked>
                 <label class="option__label" for="try-month">
-                  <span class="option__text">
                     <span class="option__title">
-                      <strong>200 ₽</strong> <span class="option__period">/ месяц</span>
+                      <strong class="option__strong">200 ₽</strong> <span class="option__period">/ месяц</span>
                     </span>
-                    <span class="option__note">400 ₽ в месяц без трат по карте Газпромбанка</span>
+                    <span class="option__note option__note--up"><strong class="option__strong option__strong--text">400 ₽</strong> в месяц без трат</span> 
+                    <span class="option__note">по карте Газпромбанка</span>
                   </span>
+                  <svg class="option__check" width="12" height="12" aria-hidden="true">
+                    <use xlink:href="images/sprite/svg#icon-check-tarrifs"></use>
+                  </svg>
                 </label>
               </div>
 
-              <!-- 6 месяцев -->
               <div class="option">
                 <input class="option__radio" type="radio" name="plan-try" id="try-6m">
                 <label class="option__label" for="try-6m">
                   <span class="option__text">
                     <span class="option__caption">Предоплата за 6 месяцев</span>
-                    <span class="option__title"><strong>1080 ₽</strong></span>
-                    <span class="option__note">Экономия <strong>1320 ₽</strong></span>
+                    <span class="option__title"><strong class="option__strong">1080 ₽</strong></span>
+                    <span class="option__note">Экономия <strong class="option__strong option__strong--text">1320 ₽</strong></span>
                   </span>
                 </label>
               </div>
 
-              <!-- 12 месяцев -->
               <div class="option">
                 <input class="option__radio" type="radio" name="plan-try" id="try-12m">
                 <label class="option__label" for="try-12m">
                   <span class="option__text">
                     <span class="option__caption">Предоплата за 12 месяцев</span>
-                    <span class="option__title"><strong>1680 ₽</strong></span>
-                    <span class="option__note">Экономия <strong>3120 ₽</strong></span>
+                    <span class="option__title"><strong class="option__strong">1680 ₽</strong></span>
+                    <span class="option__note">Экономия <strong class="option__strong option__strong--text">3120 ₽</strong></span>
                   </span>
                 </label>
               </div>
-            </div>
+            </fieldset>
 
             <!-- Кнопка -->
             <div class="plan__actions">
@@ -206,7 +202,7 @@
 
             <div class="plan-options" aria-label="Варианты оплаты">
               <!-- Месяц -->
-              <label class="option option--price">
+              <div class="option option--price">
                 <input class="option__input" type="radio" name="plan-try-option" value="monthly" checked>
                 <span class="option__box">
                   <span class="option__text">
@@ -224,10 +220,10 @@
                     </span>
                   </span>
                 </span>
-              </label>
+              </div>
 
               <!-- 6 месяцев -->
-              <label class="option option--price">
+              <div class="option option--price">
                 <input class="option__input" type="radio" name="plan-try-option" value="6m">
                 <span class="option__box">
                   <span class="option__text">
@@ -237,7 +233,7 @@
                   </span>
                   <span class="check" aria-hidden="true"><span class="check__inner"></span></span>
                 </span>
-              </label>
+              </div>
 
               <!-- 12 месяцев -->
               <label class="option option--price">
