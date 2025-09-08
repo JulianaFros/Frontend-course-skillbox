@@ -39,15 +39,12 @@
 }
 
 .order-form__input {
-    margin-bottom: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.order-form--register .order-form__input {
-    gap: 23px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: nowrap;
+    gap: 20px 10px;
     margin: 0;
+    margin-bottom: 24px;
 }
 
 .order-form__up {
