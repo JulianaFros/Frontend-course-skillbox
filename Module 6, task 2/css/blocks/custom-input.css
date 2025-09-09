@@ -1,6 +1,7 @@
 .custom-input {
     position: relative;
     grid-column: 1/3;
+    width: 386px;
 }
 
 .custom-input--small-left,
@@ -105,18 +106,20 @@
     font-size: 14px;
     line-height: 16px;
     color: #8F939F;
-    z-index: 0;
+    z-index: 1;
+    padding: 0 4px;
 }
 
 .custom-input__label::before {
     content: '';
     display: block;
     height: 4px;
+    width: 100%;
     background-color: #FFF;
     position: absolute;
     top: 6px;
-    left: -4px;
-    z-index: 1;
+    left: -1px;
+    z-index: -1;
 }
 
 .custom-input--register .custom-input__text {

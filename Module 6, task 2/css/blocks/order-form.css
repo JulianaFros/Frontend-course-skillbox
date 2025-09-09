@@ -17,6 +17,12 @@
     padding: 0;
 }
 
+.order-form--login {
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
 .order-form--agree {
     margin: 0;
     padding: 0;
@@ -118,7 +124,7 @@
     justify-content: center;
     position: absolute;
     top: 22px;
-    left: 16px;
+    left: -24px;
 }
 
 .order-form__back-icon {
@@ -144,5 +150,7 @@
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
+    margin-bottom: 16px;
+    margin-top: 4px;
 }
 
