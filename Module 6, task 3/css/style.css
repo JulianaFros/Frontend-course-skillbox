@@ -10,8 +10,9 @@
 @import "blocks/header.css";
 @import "blocks/footer.css";
 @import "blocks/btn.css";
-@import "blocks/card.css";
 @import "blocks/check.css";
+@import "blocks/checkbox.css";
+@import "blocks/custom-input.css";
 @import "blocks/link.css";
 @import "blocks/option.css";
 @import "blocks/plan.css";
@@ -21,7 +22,9 @@
 @import "blocks/order.css";
 @import "blocks/radio.css";
 @import "blocks/radio-card.css";
+@import "blocks/radio-cards.css";
 @import "blocks/field.css";
-@import "blocks/input.css";
 @import "blocks/checkbox.css";
 @import "blocks/plan-options.css";
+@import "blocks/group.css";
+@import "blocks/form.css";

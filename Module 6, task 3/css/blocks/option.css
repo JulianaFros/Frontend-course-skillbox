@@ -15,25 +15,7 @@
     border-color: #259DD6;
 }
 
-.option__check {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 16px;
-    height: 16px;
-    opacity: 0;
-    transition: opacity .2s ease;
-    pointer-events: none;
-    z-index: 1;
-    /* поверх кружка */
-    color: #fff;
-    /* если в спрайте fill="currentColor" */
-}
 
-.option:has(.option__radio:checked)+.option:has(.option__check) {
-    opacity: 1;
-}
 
 .option:has(.option__radio:checked) {
     border-color: #259DD6;
@@ -45,7 +27,7 @@
 
 .option__text {
     display: grid;
-    gap: 6px;
+    gap: 8px;
     min-width: 0;
 }
 
@@ -56,6 +38,10 @@
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+.option__title--first-card {
+    margin-bottom: 6px;
 }
 
 .option__period {
@@ -81,10 +67,6 @@
     display: block;
 }
 
-.option__note--up {
-    margin-bottom: 4px;
-}
-
 .option__note strong {
     font-weight: 800;
 }
@@ -108,16 +90,24 @@
     position: absolute;
     top: 16px;
     right: 16px;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.option__check {
+    position: absolute;
+    right: 22px;
+    top: 22px;
+    opacity: 1;
+    pointer-events: none;
+    z-index: 1;
+    color: #fff;
 }
 
 .option__radio:checked+.option__label::after {
     background-color: #259DD6;
     border: none;
 }
-
-.option__radio:checked + .option__label .option__check {
-    opacity: 1;
-  }
 
 .option__strong {
     font-weight: 700;

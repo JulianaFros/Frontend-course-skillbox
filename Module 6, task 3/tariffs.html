@@ -28,15 +28,15 @@
     </div>
   </header>
   <main class="page page--tariffs">
+    <div class="container">
+      <section class="section section--plans">
 
-    <section class="section section--plans">
-      <div class="container">
         <h1 class="section__title">
           ТАРИФЫ <span class="section__hashtag">#РАЗУМНЫЙВЫБОР</span>
         </h1>
 
         <div class="plans">
-          <article class="plan card plan--try">
+          <article class="plan__card">
 
             <header class="plan__head">
               <h2 class="plan__title">Пробуй</h2>
@@ -94,18 +94,18 @@
               </a>
             </p>
 
-            <fieldset class="plan-options">
+            <fieldset class="plan-options" aria-label="Варианты оплаты">
               <div class="option">
                 <input class="option__radio" type="radio" name="plan-try" id="try-month" checked>
                 <label class="option__label" for="try-month">
-                    <span class="option__title">
-                      <strong class="option__strong">200 ₽</strong> <span class="option__period">/ месяц</span>
-                    </span>
-                    <span class="option__note option__note--up"><strong class="option__strong option__strong--text">400 ₽</strong> в месяц без трат</span> 
-                    <span class="option__note">по карте Газпромбанка</span>
+                  <span class="option__title option__title--first-card">
+                    <strong class="option__strong">200 ₽</strong> <span class="option__period">/ месяц</span>
                   </span>
-                  <svg class="option__check" width="12" height="12" aria-hidden="true">
-                    <use xlink:href="images/sprite/svg#icon-check-tarrifs"></use>
+                  <span class="option__note option__note--up"><strong class="option__strong option__strong--text">400
+                      ₽</strong> в месяц без трат</span>
+                  <span class="option__note">по карте Газпромбанка</span>
+                  <svg class="option__check" width="12" height="12">
+                    <use xlink:href="images/sprite.svg#icon-check-tarrifs"></use>
                   </svg>
                 </label>
               </div>
@@ -116,8 +116,12 @@
                   <span class="option__text">
                     <span class="option__caption">Предоплата за 6 месяцев</span>
                     <span class="option__title"><strong class="option__strong">1080 ₽</strong></span>
-                    <span class="option__note">Экономия <strong class="option__strong option__strong--text">1320 ₽</strong></span>
+                    <span class="option__note">Экономия <strong class="option__strong option__strong--text">1320
+                        ₽</strong></span>
                   </span>
+                  <svg class="option__check" width="12" height="12">
+                    <use xlink:href="images/sprite.svg#icon-check-tarrifs"></use>
+                  </svg>
                 </label>
               </div>
 
@@ -127,20 +131,22 @@
                   <span class="option__text">
                     <span class="option__caption">Предоплата за 12 месяцев</span>
                     <span class="option__title"><strong class="option__strong">1680 ₽</strong></span>
-                    <span class="option__note">Экономия <strong class="option__strong option__strong--text">3120 ₽</strong></span>
+                    <span class="option__note">Экономия <strong class="option__strong option__strong--text">3120
+                        ₽</strong></span>
                   </span>
+                  <svg class="option__check" width="12" height="12">
+                    <use xlink:href="images/sprite.svg#icon-check-tarrifs"></use>
+                  </svg>
                 </label>
               </div>
             </fieldset>
 
-            <!-- Кнопка -->
             <div class="plan__actions">
               <a class="btn btn--m btn--blue" href="#" role="button">Заказать SIM-карту</a>
             </div>
           </article>
 
-          <!-- Карточка тарифа -->
-          <article class="plan card">
+          <article class="plan__card">
             <header class="plan__head">
               <div class="plan__title-row">
                 <h2 class="plan__title">Действуй</h2>
@@ -200,63 +206,59 @@
               </a>
             </p>
 
-            <div class="plan-options" aria-label="Варианты оплаты">
-              <!-- Месяц -->
-              <div class="option option--price">
-                <input class="option__input" type="radio" name="plan-try-option" value="monthly" checked>
-                <span class="option__box">
-                  <span class="option__text">
-                    <span class="option__title"><strong class="option__price">300 ₽</strong> <span
-                        class="option__period">/
-                        месяц</span></span>
-                    <span class="option__note">600 ₽ в месяц без трат по карте Газпромбанка</span>
+            <fieldset class="plan-options" aria-label="Варианты оплаты">
+              <div class="option">
+                <input class="option__radio" type="radio" name="plan-do" id="try-month-do" checked>
+                <label class="option__label" for="try-month-do">
+                  <span class="option__title option__title--first-card">
+                    <strong class="option__strong">300 ₽</strong> <span class="option__period">/ месяц</span>
                   </span>
-                  <!-- radio small с галочкой -->
-                  <span class="check" aria-hidden="true">
-                    <span class="check__inner">
-                      <svg class="plan__feature__icon" width="12" height="10" aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#icon-check-tarrifs"></use>
-                      </svg>
-                    </span>
-                  </span>
-                </span>
+                  <span class="option__note option__note--up"><strong class="option__strong option__strong--text">600
+                      ₽</strong> в месяц без трат</span>
+                  <span class="option__note">по карте Газпромбанка</span>
+                  <svg class="option__check" width="12" height="12">
+                    <use xlink:href="images/sprite.svg#icon-check-tarrifs"></use>
+                  </svg>
+                </label>
               </div>
 
-              <!-- 6 месяцев -->
-              <div class="option option--price">
-                <input class="option__input" type="radio" name="plan-try-option" value="6m">
-                <span class="option__box">
+              <div class="option">
+                <input class="option__radio" type="radio" name="plan-do" id="try-6m-do">
+                <label class="option__label" for="try-6m-do">
                   <span class="option__text">
                     <span class="option__caption">Предоплата за 6 месяцев</span>
-                    <span class="option__title"><strong class="option__price">1620 ₽</strong></span>
-                    <span class="option__note">Экономия <strong class="option__price--economy">1980 ₽</strong></span>
+                    <span class="option__title"><strong class="option__strong">1620 ₽</strong></span>
+                    <span class="option__note">Экономия <strong class="option__strong option__strong--text">1980
+                        ₽</strong></span>
                   </span>
-                  <span class="check" aria-hidden="true"><span class="check__inner"></span></span>
-                </span>
+                  <svg class="option__check" width="12" height="12">
+                    <use xlink:href="images/sprite.svg#icon-check-tarrifs"></use>
+                  </svg>
+                </label>
               </div>
 
-              <!-- 12 месяцев -->
-              <label class="option option--price">
-                <input class="option__input" type="radio" name="plan-try-option" value="12m">
-                <span class="option__box">
+              <div class="option">
+                <input class="option__radio" type="radio" name="plan-do" id="try-12m-do">
+                <label class="option__label" for="try-12m-do">
                   <span class="option__text">
                     <span class="option__caption">Предоплата за 12 месяцев</span>
-                    <span class="option__title"><strong class="option__price">2520 ₽</strong></span>
-                    <span class="option__note">Экономия <strong class="option__price--economy">4680 ₽</strong></span>
+                    <span class="option__title"><strong class="option__strong">2520 ₽</strong></span>
+                    <span class="option__note">Экономия <strong class="option__strong option__strong--text">4680
+                        ₽</strong></span>
                   </span>
-                  <span class="check" aria-hidden="true"><span class="check__inner"></span></span>
-                </span>
-              </label>
-            </div>
+                  <svg class="option__check" width="12" height="12">
+                    <use xlink:href="images/sprite.svg#icon-check-tarrifs"></use>
+                  </svg>
+                </label>
+              </div>
+            </fieldset>
 
-            <!-- Кнопка -->
             <div class="plan__actions">
               <a class="btn btn--m btn--indigo" href="#" role="button">Заказать SIM-карту</a>
             </div>
           </article>
 
-          <!-- Карточка тарифа -->
-          <article class="plan card">
+          <article class="plan__card">
             <header class="plan__head">
               <h2 class="plan__title">Побеждай</h2>
               <ul class="plan__stats">
@@ -312,177 +314,173 @@
               </a>
             </p>
 
-            <div class="plan-options" aria-label="Варианты оплаты">
-              <!-- Месяц -->
-              <label class="option option--price">
-                <input class="option__input" type="radio" name="plan-try-option" value="monthly" checked>
-                <span class="option__box">
-                  <span class="option__text">
-                    <span class="option__title"><strong class="option__price">450 ₽</strong> <span
-                        class="option__period">/
-                        месяц</span></span>
-                    <span class="option__note">900 ₽ в месяц без трат по карте Газпромбанка</span>
+            <fieldset class="plan-options" aria-label="Варианты оплаты">
+              <div class="option">
+                <input class="option__radio" type="radio" name="plan-win" id="try-month-win" checked>
+                <label class="option__label" for="try-month-win">
+                  <span class="option__title option__title--first-card">
+                    <strong class="option__strong">450 ₽</strong> <span class="option__period">/ месяц</span>
                   </span>
-                  <!-- radio small с галочкой -->
-                  <span class="check" aria-hidden="true">
-                    <span class="check__inner">
-                      <svg class="plan__feature__icon" width="12" height="10" aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#icon-check-tarrifs"></use>
-                      </svg>
-                    </span>
-                  </span>
-                </span>
-              </label>
+                  <span class="option__note option__note--up"><strong class="option__strong option__strong--text">900
+                      ₽</strong> в месяц без трат</span>
+                  <span class="option__note">по карте Газпромбанка</span>
+                  <svg class="option__check" width="12" height="12">
+                    <use xlink:href="images/sprite.svg#icon-check-tarrifs"></use>
+                  </svg>
+                </label>
+              </div>
 
-              <!-- 6 месяцев -->
-              <label class="option option--price">
-                <input class="option__input" type="radio" name="plan-try-option" value="6m">
-                <span class="option__box">
+              <div class="option">
+                <input class="option__radio" type="radio" name="plan-win" id="try-6m-win">
+                <label class="option__label" for="try-6m-win">
                   <span class="option__text">
                     <span class="option__caption">Предоплата за 6 месяцев</span>
-                    <span class="option__title"><strong class="option__price">2430 ₽</strong></span>
-                    <span class="option__note">Экономия <strong class="option__price--economy">2970 ₽</strong></span>
+                    <span class="option__title"><strong class="option__strong">2430 ₽</strong></span>
+                    <span class="option__note">Экономия <strong class="option__strong option__strong--text">2970
+                        ₽</strong></span>
                   </span>
-                  <span class="check" aria-hidden="true"><span class="check__inner"></span></span>
-                </span>
-              </label>
+                  <svg class="option__check" width="12" height="12">
+                    <use xlink:href="images/sprite.svg#icon-check-tarrifs"></use>
+                  </svg>
+                </label>
+              </div>
 
-              <!-- 12 месяцев -->
-              <label class="option option--price">
-                <input class="option__input" type="radio" name="plan-try-option" value="12m">
-                <span class="option__box">
+              <div class="option">
+                <input class="option__radio" type="radio" name="plan-win" id="try-12m-win">
+                <label class="option__label" for="try-12m-win">
                   <span class="option__text">
                     <span class="option__caption">Предоплата за 12 месяцев</span>
-                    <span class="option__title"><strong class="option__price">3780 ₽</strong></span>
-                    <span class="option__note">Экономия <strong class="option__price--economy">7020 ₽</strong></span>
+                    <span class="option__title"><strong class="option__strong">3780 ₽</strong></span>
+                    <span class="option__note">Экономия <strong class="option__strong option__strong--text">7020
+                        ₽</strong></span>
                   </span>
-                  <span class="check" aria-hidden="true"><span class="check__inner"></span></span>
-                </span>
-              </label>
-            </div>
+                  <svg class="option__check" width="12" height="12">
+                    <use xlink:href="images/sprite.svg#icon-check-tarrifs"></use>
+                  </svg>
+                </label>
+              </div>
+            </fieldset>
 
-            <!-- Кнопка -->
             <div class="plan__actions">
               <a class="btn btn--m btn--magenta" href="#" role="button">Заказать SIM-карту</a>
             </div>
           </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ====== Секция: Заказать SIM-карту ====== -->
-    <section class="section section--order">
-      <div class="container">
+      <!-- ====== Секция: Заказать SIM-карту ====== -->
+      <section class="section section--order">
         <h2 class="section__title">Заказать SIM-карту Газпромбанк Мобайл</h2>
 
-        <div class="order card">
+        <div class="order__card">
           <!-- шаги -->
           <ol class="stepper" role="list">
-            <li class="stepper__step stepper__step--active">Шаг 1<br><span class="stepper__caption">Заказ
-                SIM-карты</span></li>
-            <li class="stepper__step">Шаг 2<br><span class="stepper__caption">Подтверждение</span></li>
-            <li class="stepper__step">Шаг 3<br><span class="stepper__caption">Выбор тарифа</span></li>
-            <li class="stepper__step">Шаг 4<br><span class="stepper__caption">Доставка</span></li>
+            <li class="stepper__step stepper__ster--first">
+              <span class="stepper__point">Шаг 1</span>
+              <span class="stepper__caption">Заказ SIM-карты</span>
+            </li>
+            <li class="stepper__line">
+            </li>
+            <li class="stepper__step">
+              <span class="stepper__point">Шаг 2</span>
+              <span class="stepper__caption">Подтверждение</span>
+            </li>
+            <li class="stepper__line"></li>
+            <li class="stepper__step">
+              <span class="stepper__point">Шаг 3</span>
+              <span class="stepper__caption">Выбор тарифа</span>
+            </li>
+            <li class="stepper__line"></li>
+            <li class="stepper__step">
+              <span class="stepper__point">Шаг 4</span>
+              <span class="stepper__caption">Доставка</span>
+            </li>
           </ol>
 
-          <form class="order__form" action="#" method="post" novalidate>
-            <!-- Тип SIM: radio card (большие) -->
-            <fieldset class="group group--radio-cards">
-              <legend class="group__legend sr-only">Выберите тип SIM-карты</legend>
+          <span class="order__line"></span>
+
+          <form class="order__form" action="#">
+            <fieldset class="group">
+              <legend class="visually-hidden">Форма заказа</legend>
 
               <div class="radio-cards">
-                <label class="radio-card">
-                  <span class="radio-card__label">Пластиковая</span>
-                  <span class="radio-card__right">
-                    <input class="radio__input" type="radio" name="sim-type" value="plastic" checked>
-                    <span class="radio__dot" aria-hidden="true"><span class="radio__center"></span></span>
-                  </span>
-                </label>
+                <span class="radio-cards__title">Выберите тип SIM-карты</span>
 
-                <label class="radio-card">
-                  <span class="radio-card__label">eSIM</span>
-                  <span class="radio-card__right">
-                    <input class="radio__input" type="radio" name="sim-type" value="esim">
-                    <span class="radio__dot" aria-hidden="true"><span class="radio__center"></span></span>
-                  </span>
-                </label>
+                <div class="radio-cards__variety">
+                  <div class="radio-card">
+                    <input class="radio-card__input" type="radio" id="sim-type" name="sim-type" value="plastic" checked>
+                    <label class="radio-card__label" for="sim-type">Пластиковая</label>
+                    <svg class="radio-card__check" width="12" height="12">
+                      <use xlink:href="images/sprite.svg#icon-check-tarrifs"></use>
+                    </svg>
+                  </div>
+
+                  <div class="radio-card">
+                    <input class="radio-card__input" type="radio" id="esim-type" name="sim-type" value="esim-type">
+                    <label class="radio-card__label" for="esim-type">eSIM</label>
+                    <svg class="radio-card__check" width="12" height="12">
+                      <use xlink:href="images/sprite.svg#icon-check-tarrifs"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="custom-input">
+                <label class="custom-input__label" for="fio">ФИО*</label>
+                <input class="custom-input__input" type="text" id="fio" name="fio" placeholder="Иванов Иван Иванович"
+                  required>
+              </div>
+
+              <div class="custom-input">
+                <label class="custom-input__label" for="tel">Контактный номер*</label>
+                <input class="custom-input__input" type="tel" id="tel" name="tel" placeholder="+7 (9__) ___-__-__"
+                  required>
+              </div>
+
+              <div class="custom-input">
+                <label class="custom-input__label" for="email">Электронная почта</label>
+                <input class="custom-input__input" type="email" id="email" name="email" placeholder="ivan@email.ru">
               </div>
             </fieldset>
-
-            <!-- Поля формы -->
-            <div class="form-grid">
-              <div class="field">
-                <div class="field__wrap">
-                  <input class="input" type="text" id="fio" name="fio" placeholder="Иванов Иван Иванович"
-                    autocomplete="name">
-                  <label class="field__label" for="fio">ФИО*</label>
-                </div>
-                <!-- <p class="field__error">Укажите ФИО</p> -->
-              </div>
-
-              <div class="field">
-                <div class="field__wrap">
-                  <input class="input" type="email" id="email" name="email" placeholder="ivan@email.ru"
-                    autocomplete="email">
-                  <label class="field__label" for="email">Электронная почта</label>
-                </div>
-                <!-- <p class="field__error">Неверный email</p> -->
-              </div>
-
-              <div class="field">
-                <div class="field__wrap">
-                  <input class="input" type="tel" id="phone" name="phone" placeholder="+7 (9__) ___-__-__"
-                    autocomplete="tel">
-                  <label class="field__label" for="phone">Контактный номер*</label>
-                </div>
-                <!-- <p class="field__error">Некорректный номер</p> -->
-              </div>
-
-              <!-- Перенос номера (как чекбокс/переключатель по макету) -->
-              <div class="field field--porting">
-                <label class="checkbox">
-                  <input class="checkbox__input" type="checkbox" id="porting" name="porting">
-                  <span class="checkbox__box" aria-hidden="true">
-                    <svg class="plan__feature__icon" width="12" height="10" aria-hidden="true">
-                      <use xlink:href="images/sprite.svg#icon-check-tarrifs"></use>
-                    </svg>
-                  </span>
-                  <span class="checkbox__label">Перенести номер и получать +5 ГБ ежемесячно</span>
-                </label>
-              </div>
-
-              <!-- Согласие -->
-              <div class="field field--consent form-row-full">
-                <label class="checkbox">
-                  <input class="checkbox__input" type="checkbox" id="consent" name="consent">
-                  <span class="checkbox__box" aria-hidden="true">
-                    <svg class="plan__feature__icon" width="12" height="10" aria-hidden="true">
-                      <use xlink:href="images/sprite.svg#icon-check-tarrifs"></use>
-                    </svg>
-                  </span>
-                  <span class="checkbox__label">
-                    Согласен с <a href="#">условиями заказа и доставки SIM-карты</a>, на обработку и безопасность моих
-                    персональных данных и получение рекламы.
-                  </span>
-                </label>
-              </div>
-
-              <!-- Кнопка -->
-              <div class="form-actions form-row-full">
-                <button class="btn btn--s" type="submit">Продолжить</button>
-              </div>
-            </div>
           </form>
 
-          <p class="order__note">
-            Этот сайт защищён reCAPTCHA, и к нему применяются
-            <a href="#">Политика конфиденциальности Google</a> и
-            <a href="#">Условия предоставления услуг</a>.
-          </p>
-        </div>
-      </div>
-    </section>
+          <div class="order__checkbox">
+            <div class="checkbox">
+              <input class="checkbox__input" type="checkbox" id="+5GB" name="+5GB">
+              <label class="checkbox__label" for="+5GB">Перенести номер и получать +5 ГБ ежемесячно</label>
+              <svg class="checkbox__check" width="12" height="12">
+                <use xlink:href="images/sprite.svg#icon-check-tarrifs"></use>
+              </svg>
+              <svg class="checkbox__icon" width="20" height="20">
+                <use xlink:href="images/sprite.svg#icon-info"></use>
+              </svg>
+            </div>
 
+            <div class="checkbox checkbox--secondary">
+              <input class="checkbox__input" type="checkbox" id="rules" name="rules" checked>
+              <label class="checkbox__label" for="rules">Согласен с <a class="checkbox__rules" href="#">Правилами заказа
+                  и доставки SIM-карт</a>, на обработку в соответствии с ними моих персональных данных и получение
+                рекламы.</label>
+              <svg class="checkbox__check" width="12" height="12">
+                <use xlink:href="images/sprite.svg#icon-check-tarrifs"></use>
+              </svg>
+              <svg class="checkbox__icon" width="20" height="20">
+                <use xlink:href="images/sprite.svg#icon-info"></use>
+              </svg>
+            </div>
+          </div>
+
+          <button class="checkbox__button btn btn--s" type="submit">Продолжить</button>
+
+        </div>
+
+        <p class="order__note">
+          Этот сайт защищён reCAPTCHA, и к нему применяются
+          <a href="#">Политика конфиденциальности Google</a> и
+          <a href="#">Условия предоставления услуг</a>.
+        </p>
+      </section>
+    </div>
   </main>
   <footer class="footer">
     <div class="footer__top">

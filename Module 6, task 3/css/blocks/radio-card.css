@@ -1,36 +1,52 @@
 .radio-card {
     position: relative;
-    border: 1px solid #E2E6F1;
-    border-radius: 16px;
-    padding: 16px 14px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    background: #fff;
-    transition: border-color .15s, box-shadow .15s;
+    margin: 0;
+    padding: 0;
+    padding-left: 36px;
     cursor: pointer;
 }
 
-.radio-card:hover {
-    border-color: #2B79E3;
-}
-
-.radio-card:has(.radio__input:focus-visible) {
-    box-shadow: 0 0 0 3px rgba(43, 121, 227, .25);
-}
-
-.radio-card:has(.radio__input:checked) {
-    border-color: #2B79E3;
+.radio-card__input {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -2px;
+    left: 0px;
 }
 
 .radio-card__label {
-    font-weight: 700;
-    color: #1E222E;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 115%;
+    cursor: pointer;
 }
 
-.radio-card__right {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.radio-card__label::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #259DD6;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.radio-card__check {
+    position: absolute;
+    left: 6px;
+    top: 4px;
+    opacity: 1;
+    pointer-events: none;
+    z-index: 1;
+    color: #fff;
+}
+
+.radio-card__input:checked + .radio-card__label::after {
+    background-color: #259DD6;
+    border: none;
 }

@@ -1,0 +1,20 @@
+.radio-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-cards__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 115%;
+    color: #858385;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+.radio-cards__variety {
+    display: flex;
+    gap: 28px;
+    
+}

@@ -1,4 +1,7 @@
-.plan {
+.plan__card {
+    background: #FFFFFF;
+    border-radius: 28px;
+    border: 1px solid #E2E4E8;
     padding: 36px 31px 22px;
 }
 
@@ -24,13 +27,13 @@
 
 .plan__badge {
     display: inline-block;
-    padding: 4px 10px;
-    border-radius: 999px;
+    padding: 6px 12px;
+    border-radius: 60px;
     font-weight: 700;
-    font-size: 12px;
-    line-height: 1;
+    font-size: 14px;
+    line-height: 115%;
     color: #fff;
-    background: linear-gradient(90deg, #8A41E2, #5D9BFF);
+    background: linear-gradient(90deg, #537CCB 0%, #9648BD 100%);
 }
 
 .plan__stats {
@@ -45,7 +48,7 @@
 
 .plan__stat {
     display: grid;
-    gap: 2px;
+    gap: 5px;
     justify-items: center;
 }
 

@@ -1,0 +1,10 @@
+.group {
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(2, 68px);
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
