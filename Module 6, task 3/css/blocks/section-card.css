@@ -1,0 +1,32 @@
+.section-card {
+  width: 940px;
+  min-height: 500px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 10px 24px 0px rgba(32, 35, 52, 0.1);
+  padding: 40px 60px;
+  margin-inline: auto;
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.section-card__line {
+    display: block;
+    width: 820px;
+    height: 1px;
+    background: #F0F0F0;
+    margin-bottom: 36px;
+}
+
+.section-card__checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 450px;
+}
+
+.section-card__button {
+    position: absolute;
+    right: 63px;
+    bottom: 41px;
+}

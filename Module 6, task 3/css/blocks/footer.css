@@ -29,6 +29,10 @@
   line-height: 1.15;
 }
 
+.footer__link:hover {
+  color: #259DD6;
+}
+
 .footer__bottom {
   padding: 23px 0 24px;
 }

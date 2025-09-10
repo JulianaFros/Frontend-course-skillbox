@@ -41,7 +41,7 @@
 }
 
 .option__title--first-card {
-    margin-bottom: 6px;
+    margin-bottom: 2px;
 }
 
 .option__period {
@@ -71,12 +71,16 @@
     font-weight: 800;
 }
 
+.option__note--up{
+    margin-bottom: 3px;
+}
+
 .option__radio {
     width: 24px;
     height: 24px;
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 17px;
+    right: 14px;
 }
 
 .option__label::after {
@@ -88,16 +92,16 @@
     border-radius: 50%;
     background-color: #fff;
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 17px;
+    right: 14px;
     z-index: 0;
     cursor: pointer;
 }
 
 .option__check {
     position: absolute;
-    right: 22px;
-    top: 22px;
+    right: 20px;
+    top: 23px;
     opacity: 1;
     pointer-events: none;
     z-index: 1;

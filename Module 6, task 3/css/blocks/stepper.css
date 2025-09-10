@@ -33,12 +33,12 @@
     color: #858385;
 }
 
-.stepper__ster--first .stepper__point {
+.stepper__step--first .stepper__point {
     color: #fff;
     background-color: #239DD6;
 }
 
-.stepper__ster--first .stepper__caption {
+.stepper__step--first .stepper__caption {
     color: #343033;
 }
 

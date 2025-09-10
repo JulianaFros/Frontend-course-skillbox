@@ -35,7 +35,7 @@
           ТАРИФЫ <span class="section__hashtag">#РАЗУМНЫЙВЫБОР</span>
         </h1>
 
-        <div class="plans">
+        <div class="plan">
           <article class="plan__card">
 
             <header class="plan__head">
@@ -88,7 +88,7 @@
 
             <p class="plan__more">
               <a class="link link--more" href="#"><span class="link__text" aria-hidden="true">Подробнее о тарифе </span>
-                <svg class="order-form__link-icon" width="5" height="10">
+                <svg class="link__icon" width="5" height="10">
                   <use xlink:href="images/sprite.svg#icon-xs-arrow"></use>
                 </svg>
               </a>
@@ -200,7 +200,7 @@
 
             <p class="plan__more">
               <a class="link link--more" href="#"><span class="link__text" aria-hidden="true">Подробнее о тарифе </span>
-                <svg class="order-form__link-icon" width="5" height="10">
+                <svg class="link__icon" width="5" height="10">
                   <use xlink:href="images/sprite.svg#icon-xs-arrow"></use>
                 </svg>
               </a>
@@ -308,7 +308,7 @@
 
             <p class="plan__more">
               <a class="link link--more" href="#"><span class="link__text" aria-hidden="true">Подробнее о тарифе </span>
-                <svg class="order-form__link-icon" width="5" height="10">
+                <svg class="link__icon" width="5" height="10">
                   <use xlink:href="images/sprite.svg#icon-xs-arrow"></use>
                 </svg>
               </a>
@@ -368,14 +368,12 @@
         </div>
       </section>
 
-      <!-- ====== Секция: Заказать SIM-карту ====== -->
       <section class="section section--order">
         <h2 class="section__title">Заказать SIM-карту Газпромбанк Мобайл</h2>
 
-        <div class="order__card">
-          <!-- шаги -->
+        <div class="section-card">
           <ol class="stepper" role="list">
-            <li class="stepper__step stepper__ster--first">
+            <li class="stepper__step stepper__step--first">
               <span class="stepper__point">Шаг 1</span>
               <span class="stepper__caption">Заказ SIM-карты</span>
             </li>
@@ -397,9 +395,9 @@
             </li>
           </ol>
 
-          <span class="order__line"></span>
+          <span class="section-card__line"></span>
 
-          <form class="order__form" action="#">
+          <form class="section-card__form" action="#">
             <fieldset class="group">
               <legend class="visually-hidden">Форма заказа</legend>
 
@@ -429,22 +427,25 @@
                 <label class="custom-input__label" for="fio">ФИО*</label>
                 <input class="custom-input__input" type="text" id="fio" name="fio" placeholder="Иванов Иван Иванович"
                   required>
+                <span class="custom-input__error">Некорректное значение</span>
               </div>
 
               <div class="custom-input">
                 <label class="custom-input__label" for="tel">Контактный номер*</label>
                 <input class="custom-input__input" type="tel" id="tel" name="tel" placeholder="+7 (9__) ___-__-__"
                   required>
+                <span class="custom-input__error">Некорректное значение</span>
               </div>
 
               <div class="custom-input">
                 <label class="custom-input__label" for="email">Электронная почта</label>
                 <input class="custom-input__input" type="email" id="email" name="email" placeholder="ivan@email.ru">
+                <span class="custom-input__error">Некорректное значение</span>
               </div>
             </fieldset>
           </form>
 
-          <div class="order__checkbox">
+          <div class="section-card__checkbox">
             <div class="checkbox">
               <input class="checkbox__input" type="checkbox" id="+5GB" name="+5GB">
               <label class="checkbox__label" for="+5GB">Перенести номер и получать +5 ГБ ежемесячно</label>
@@ -470,14 +471,14 @@
             </div>
           </div>
 
-          <button class="checkbox__button btn btn--s" type="submit">Продолжить</button>
+          <button class="section-card__button btn btn--s" type="submit" disabled>Продолжить</button>
 
         </div>
 
-        <p class="order__note">
+        <p class="section__note">
           Этот сайт защищён reCAPTCHA, и к нему применяются
-          <a href="#">Политика конфиденциальности Google</a> и
-          <a href="#">Условия предоставления услуг</a>.
+          <a class="section__link" href="#">Политика конфиденциальности Google</a> и
+          <a class="section__link" href="#">Условия предоставления услуг</a>.
         </p>
       </section>
     </div>
