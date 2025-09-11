@@ -1,9 +1,12 @@
 .option {
     position: relative;
+}
+
+.option__label {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
-    gap: 12px;
+    gap: 4px;
     padding: 14px 16px;
     padding-right: 56px;
     border: 2px solid #E2E6F1;
@@ -11,17 +14,11 @@
     cursor: pointer;
 }
 
-.option:hover {
+.option__label:has(.option__radio:checked) {
     border-color: #259DD6;
 }
 
-
-
-.option:has(.option__radio:checked) {
-    border-color: #259DD6;
-}
-
-.option:hover .option__box {
+.option__label:hover {
     border-color: #259DD6;
 }
 
@@ -38,10 +35,6 @@
     display: flex;
     gap: 10px;
     align-items: center;
-}
-
-.option__title--first-card {
-    margin-bottom: 2px;
 }
 
 .option__period {
@@ -71,16 +64,17 @@
     font-weight: 800;
 }
 
-.option__note--up{
-    margin-bottom: 3px;
-}
-
 .option__radio {
     width: 24px;
     height: 24px;
     position: absolute;
     top: 17px;
     right: 14px;
+}
+
+.option__radio:focus-visible {
+    outline: none;
+    border: 2px solid #1883B6
 }
 
 .option__label::after {
@@ -111,6 +105,10 @@
 .option__radio:checked+.option__label::after {
     background-color: #259DD6;
     border: none;
+}
+
+.option__radio:checked+.option__label  {
+    border-color: #259DD6;
 }
 
 .option__strong {

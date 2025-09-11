@@ -1,5 +1,6 @@
 .section--plans {
   margin-bottom: 100px;
+  padding: 40px 0 0 0;
 }
 
 .section__title {
@@ -16,7 +17,7 @@
 }
 
 .section--order {
-  padding: 0 56px;
+  padding: 0 50px 100px;
 }
 
 .section--order .section__title {
@@ -35,8 +36,7 @@
 }
 
 .section__note {
-  margin: 0;
-  margin-inline: auto;
+  margin: 0 0 0 50px;
   font-size: 12px;
   color: #6B7280;
 }

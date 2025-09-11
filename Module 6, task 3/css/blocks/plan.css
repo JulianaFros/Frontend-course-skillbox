@@ -9,6 +9,9 @@
     border-radius: 28px;
     border: 1px solid #E2E4E8;
     padding: 36px 31px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .plan__head {

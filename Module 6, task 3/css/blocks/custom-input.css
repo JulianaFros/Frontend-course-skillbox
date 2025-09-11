@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    position: relative;
 }
 
 .custom-input__label {
@@ -47,13 +48,15 @@
     color: #D72522;
     font-size: 12px;
     line-height: 115%;
+    position: absolute;
+    top: 72px;
 }
 
-.custom-input.is-error .custom-input__field {
+.custom-input__input--error {
     border: 1px solid #F0F0F0;
     background: #FBE2E0;
 }
 
-.custom-input.is-error ~ .custom-input__error {
+.custom-input__input--error ~ .custom-input__error {
     display: block;
 }
