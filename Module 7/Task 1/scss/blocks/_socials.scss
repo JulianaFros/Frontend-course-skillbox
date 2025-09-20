@@ -15,5 +15,9 @@
     height: 40px;
     border-radius: 50%;
     background-color: $color-solitude-1;
+
+    &:hover, &:focus {
+      background-color: $color-quartz;
+    }
   }
 }

@@ -1,5 +1,17 @@
 .sidebar {
 
+  @include vp-1023 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__heading {
     margin: 0 0 24px 0;
     font-size: 32px;
@@ -8,12 +20,16 @@
 
     @include vp-1023 {
       margin-bottom: 20px;
+      text-align: center;
+      max-width: 650px;
     }
 
     @include vp-767 {
       font-size: 20px;
       line-height: 24px;
       margin-bottom: 15px;
+      max-width: 345px;
+      text-align: center;
     }
   }
 
@@ -25,17 +41,29 @@
 
     @include vp-1023 {
       margin-bottom: 40px;
+      text-align: center;
+      max-width: 650px;
     }
 
     @include vp-767 {
       font-size: 16px;
       line-height: 20px;
       margin-bottom: 20px;
+      max-width: 345px;
+      text-align: center;
     }
   }
 
   &__button {
     display: none;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    color: $color-black-russian;
+    padding: 10px 100px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
 
     @include vp-767 {
       display: block;
@@ -44,10 +72,22 @@
 
   &__categories {
     margin: 0 0 60px 0;
+
+    @include vp-767 {
+      display: none;
+    }
   }
 
   &__socials {
     margin: 0 0 24px 0;
+
+    @include vp-767 {
+      display: none;
+    }
+
+    @include vp-1023 {
+      display: none;
+    }
   }
 
   &__share {
@@ -56,6 +96,14 @@
     font-size: 13px;
     line-height: 16px;
     display: block;
+
+    @include vp-767 {
+      display: none;
+    }
+
+    @include vp-1023 {
+      display: none;
+    }
   }
 
   &__copyright {
@@ -63,5 +111,13 @@
     color: $color-storm-grey;
     font-size: 13px;
     line-height: 16px;
+
+    @include vp-767 {
+      display: none;
+    }
+
+    @include vp-1023 {
+      display: none;
+    }
   }
 }
