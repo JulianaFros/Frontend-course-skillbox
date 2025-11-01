@@ -1,0 +1,63 @@
+.news-card {
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 190px;
+  background: $color-solitude-2;
+  border-radius: 16px;
+
+  @media (min-width: $vp-tablet) {
+    padding: 24px 28px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    padding: 32px;
+    min-height: 220px;
+  }
+
+  @media (min-width: $vp-desktop-lg) {
+    min-height: 244px;
+  }
+
+  &__date {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-storm-grey-1;
+
+    @media (min-width: $vp-tablet) {
+      margin: 0 0 23px 0;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    font-size: 14px;
+    line-height: 18px;
+
+    @media (min-width: $vp-desktop) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  &__link {
+    margin: auto 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-black-russian;
+
+    &:hover, &:focus {
+      color: $color-royal-blue-1;
+    }
+  }
+
+  &__icon {
+    flex-shrink: 0;
+  }
+}

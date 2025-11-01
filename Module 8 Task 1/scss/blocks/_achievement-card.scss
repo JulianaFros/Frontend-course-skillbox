@@ -1,0 +1,59 @@
+.achievement-card {
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 0 20px;
+  border-radius: 16px;
+  background: $color-gradient;
+
+  @media (min-width: $vp-tablet) {
+    flex-direction: column;
+    align-items: start;
+    padding: 28px 28px 38px;
+    gap: 28px 0;
+  }
+
+  @media (min-width: $vp-desktop) {
+    padding: 40px 40px 56px;
+    gap: 42px 0;
+  }
+
+  @media (min-width: $vp-desktop-lg) {
+    gap: 47px 0;
+    padding: 40px;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    color: $color-white;
+  }
+
+  &__title {
+    margin: 0 0 8px 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: $color-white;
+
+    @media (min-width: $vp-desktop) {
+      font-size: 32px;
+      line-height: 36px;
+      margin: 0 0 16px 0;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-white;
+
+    @media (min-width: $vp-desktop-lg) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
