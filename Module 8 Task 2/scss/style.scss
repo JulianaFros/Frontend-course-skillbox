@@ -1,0 +1,27 @@
+/* Global */
+/* ------------------------------------ */
+@import "global/_normalize.scss";
+@import "global/_mixins";
+@import "global/_variables";
+@import "global/_fonts";
+@import "global/_reboot";
+@import "global/_container";
+@import "global/_visually-hidden";
+
+/* Blocks */
+/* ------------------------------------ */
+@import "blocks/_header";
+@import "blocks/_footer";
+@import "blocks/_btn";
+@import "blocks/_btn-icon";
+@import "blocks/_socials";
+@import "blocks/_breadcrumbs";
+@import "blocks/_search";
+@import "blocks/_results";
+@import "blocks/_results-card";
+@import "blocks/_pager";
+@import "blocks/_pages";
+@import "blocks/_empty";
+@import "blocks/_examples";
+@import "blocks/_cookies";
+@import "blocks/_buttons-cookies";

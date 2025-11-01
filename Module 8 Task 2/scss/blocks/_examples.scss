@@ -1,0 +1,29 @@
+.examples {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 8px;
+    
+    @media (min-width: $vp-desktop) {
+          padding-inline: 69px;
+        }
+
+        @media (min-width: $vp-desktop-lg) {
+          padding-inline: 209px;
+        }
+
+    &__text {
+        display: inline-block;
+        width: fit-content;
+        font-size: 12px;
+        line-height: 14px;
+        padding: 12px 14px;
+        background-color: $color-lavander;
+        border-radius: 8px;
+
+        @media (min-width: $vp-tablet) {
+            font-size: 13px;
+            line-height: 16px;
+        }
+    }
+}

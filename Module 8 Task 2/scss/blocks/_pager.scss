@@ -1,0 +1,46 @@
+.pager {
+    margin: 0 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: $vp-desktop) {
+        margin: 0 0 60px 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        font-size: 14px;
+        line-height: 18px;
+
+        &--active {
+            background-color: $color-black-russian;
+            color: $color-white;
+            font-weight: 700;
+        }
+
+        &--disabled {
+            background-color: $color-white-smoke;
+            color: $color-dark-gray;
+        }
+
+        &--next {
+            background-color: $color-solitude-2;
+        }
+    }
+}
