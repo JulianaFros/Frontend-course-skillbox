@@ -1,0 +1,64 @@
+@use "../global/variables" as *;
+
+.btn {
+  align-items: center;
+  background-color: $color-royal-blue-1;
+  border: none;
+  border-radius: 8px;
+  color: $color-white;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 10px;
+  width: 140px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  transition: background-color $transition-300;
+
+  &:hover,
+  &:focus-visible {
+    &:not(.btn--xl) {
+      background-color: $color-free-speech-blue;
+    }
+  }
+
+  &--xl {
+    background: $color-deep-lilac;
+    padding: 18px;
+    width: 276px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(270deg, #9548BD 0%, #547CCB 100%);
+      opacity: 0;
+      transition: opacity $transition-300;
+      border-radius: 16px;
+    }
+
+    &:hover,
+    &:focus-visible {
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__text {
+    position: relative;
+    z-index: 1;
+  }
+}

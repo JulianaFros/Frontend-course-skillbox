@@ -1,0 +1,23 @@
+/* Global */
+/* ------------------------------------ */
+@use "global/normalize";
+@use "global/variables";
+@use "global/mixins" as *;
+@use "global/fonts" as *;
+@use "global/reboot";
+@use "global/container";
+@use "global/visually-hidden";
+
+/* Blocks */
+/* ------------------------------------ */
+@use "blocks/uikit";
+@use "blocks/btn";
+@use "blocks/custom-radio-payment";
+@use "blocks/custom-checkbox";
+@use "blocks/custom-input";
+@use "blocks/link";
+@use "blocks/social";
+@use "blocks/subscribe-card";
+@use "blocks/advantage-card";
+@use "blocks/card-news";
+@use "blocks/rating-card";
