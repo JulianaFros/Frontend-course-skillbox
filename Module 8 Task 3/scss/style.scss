@@ -1,0 +1,34 @@
+/* Global */
+/* ------------------------------------ */
+@use "global/_normalize.scss";
+@use "global/_variables";
+@use "global/_mixins";
+@use "global/_fonts";
+@use "global/_reboot";
+@use "global/_container";
+@use "global/_visually-hidden";
+
+/* Blocks */
+/* ------------------------------------ */
+@use "blocks/_header";
+@use "blocks/_footer";
+@use "blocks/_btn";
+@use "blocks/_btn-icon";
+@use "blocks/_socials";
+@use "blocks/_custom-input";
+@use "blocks/_custom-checkbox";
+@use "blocks/_form";
+@use "blocks/_bonus-card";
+@use "blocks/_subscription-card";
+@use "blocks/_intro";
+@use "blocks/_bonus";
+@use "blocks/_application";
+@use "blocks/_subscriptions";
+@use "blocks/_connect";
+@use "blocks/_benefit";
+@use "blocks/_faq";
+@use "blocks/_aside";
+@use "blocks/_benefits";
+@use "blocks/_benefits-card";
+@use "blocks/_services";
+@use "blocks/_promo";
