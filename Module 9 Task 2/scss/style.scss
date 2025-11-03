@@ -1,0 +1,19 @@
+/* Global */
+/* ------------------------------------ */
+@use "global/normalize";
+@use "global/variables";
+@use "global/mixins" as *;
+@use "global/fonts" as *;
+@use "global/reboot";
+@use "global/container";
+@use "global/visually-hidden";
+
+
+/* Blocks */
+/* ------------------------------------ */
+@use "blocks/btn";
+@use "blocks/header";
+@use "blocks/main-nav";
+@use "blocks/hero";
+@use "blocks/socials";
+@use "blocks/footer";
