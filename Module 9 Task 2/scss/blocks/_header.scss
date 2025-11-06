@@ -3,6 +3,7 @@
 .header {
   padding: 24px 0;
   background-color: $color-white;
+  animation: headerIntroAnimation $transition-500;
 
   &__wrapper {
     align-items: center;
@@ -85,5 +86,14 @@
     align-items: center;
     position: absolute;
     z-index: 10;
+  }
+}
+
+@keyframes headerIntroAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

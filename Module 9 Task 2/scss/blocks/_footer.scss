@@ -1,6 +1,9 @@
 @use "../global/variables" as *;
 
 .footer {
+z-index: 1;
+animation: footerIntroAnimation $transition-500;
+
   &__wrapper {
     display: flex;
     align-items: flex-start;
@@ -94,5 +97,14 @@
     color: rgba(106, 110, 128, 0.40);
     font-size: 10px;
     line-height: 12px;
+  }
+}
+
+@keyframes footerIntroAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

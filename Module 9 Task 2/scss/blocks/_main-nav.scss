@@ -41,6 +41,12 @@
     }
   }
 
+  &__item--with-submenu:hover .main-nav__sublist,
+  &__item--with-submenu:focus-within .main-nav__sublist {
+    opacity: 1;
+    visibility: visible;
+  }
+
   &__sublist {
     display: flex;
     flex-direction: column;
@@ -55,6 +61,8 @@
     width: max-content;
     z-index: 10;
     opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
     cursor: pointer;
 
     &::before {
